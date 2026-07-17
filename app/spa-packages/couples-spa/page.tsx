@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Check, Clock, Heart, Phone, Calendar, Star } from "lucide-react";
-import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
+import { Clock, Heart, Calendar, Star } from "lucide-react";
+import AnimatedSection from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import { siteConfig } from "@/config/site";

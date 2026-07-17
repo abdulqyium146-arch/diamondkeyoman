@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Check, Clock, Star, Crown, Heart, Gem } from "lucide-react";
+import { Check, Crown, Heart, Gem } from "lucide-react";
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";

@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             {LOGO_WHITE_SVG}
             <p className="mt-4 text-gray-400 text-sm leading-relaxed">
-              Dubai's premier luxury day spa in Al Qusais. Experience world-class massage therapy,
+              Dubai&apos;s premier luxury day spa in Al Qusais. Experience world-class massage therapy,
               authentic Moroccan hammam, and advanced facial treatments in an atmosphere of
               unparalleled elegance.
             </p>

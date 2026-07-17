@@ -114,13 +114,13 @@ export default function LuxuryPackagesPage() {
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    The Royal Retreat Package is Diamond Key Spa's flagship experience — a carefully sequenced journey through four of our most transformative treatments designed to deliver results that far exceed what any single treatment could achieve alone. Over 3.5 hours, you will be guided from one expertly delivered treatment to the next, each building on the last to create a cumulative effect of deep healing and complete renewal.
+                    The Royal Retreat Package is Diamond Key Spa&apos;s flagship experience — a carefully sequenced journey through four of our most transformative treatments designed to deliver results that far exceed what any single treatment could achieve alone. Over 3.5 hours, you will be guided from one expertly delivered treatment to the next, each building on the last to create a cumulative effect of deep healing and complete renewal.
                   </p>
                   <p>
                     The journey begins with our authentic Moroccan Hammam, where steam opens your pores before traditional beldi black soap and kessa glove exfoliation removes dead skin cells accumulated over weeks. This prepares your skin to absorb the therapeutic essential oils of the aromatherapy massage with up to three times greater efficacy than untreated skin. The 75-minute aromatherapy massage uses a bespoke oil blend chosen specifically for your body and emotional needs during your pre-treatment consultation.
                   </p>
                   <p>
-                    Your Luxury Facial follows — with your pores already open and skin primed from the hammam, the facial's active ingredients penetrate at maximum depth, delivering visible transformation. Our esthetician performs a skin analysis, deep cleanse, exfoliation, mask, serum application, and moisturisation tailored to your skin type and climate challenges. Finally, the Herbal Foot Ritual completes your journey with a soothing warm soak, exfoliation, and moisturisation — a perfect conclusion that grounds and relaxes.
+                    Your Luxury Facial follows — with your pores already open and skin primed from the hammam, the facial&apos;s active ingredients penetrate at maximum depth, delivering visible transformation. Our esthetician performs a skin analysis, deep cleanse, exfoliation, mask, serum application, and moisturisation tailored to your skin type and climate challenges. Finally, the Herbal Foot Ritual completes your journey with a soothing warm soak, exfoliation, and moisturisation — a perfect conclusion that grounds and relaxes.
                   </p>
                 </div>
               </AnimatedSection>

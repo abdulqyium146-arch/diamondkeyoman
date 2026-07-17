@@ -75,7 +75,6 @@ export function AnimatedGroup({
   children,
   className,
   staggerDelay = 0.1,
-  direction = "up",
   once = true,
   amount = 0.1,
 }: {

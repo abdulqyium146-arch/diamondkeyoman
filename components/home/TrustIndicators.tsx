@@ -1,5 +1,5 @@
 import { Star, Shield, Award, Clock, Users, MapPin } from "lucide-react";
-import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
+import { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { siteConfig } from "@/config/site";
 
 const indicators = [

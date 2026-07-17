@@ -3,9 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Calendar, Phone, Star, MapPin, ChevronDown, Play } from "lucide-react";
+import { Calendar, Phone, Star, MapPin, ChevronDown } from "lucide-react";
 import { siteConfig } from "@/config/site";
-import { generateWhatsAppUrl } from "@/lib/utils";
 
 const slides = [
   {

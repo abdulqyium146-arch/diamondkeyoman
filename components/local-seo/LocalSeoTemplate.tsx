@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone, Clock, Train, Car, Navigation, Check, Star, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Clock, Train, Navigation, Check, Star } from "lucide-react";
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
@@ -30,7 +30,7 @@ interface LocalSeoTemplateProps {
 export default function LocalSeoTemplate({
   heading, subheading, areaName, intro, distance, transitInfo,
   nearbyLandmarks, directions, uniqueContent, faqs, reviews,
-  breadcrumbs, schemaJson, keywords,
+  breadcrumbs, schemaJson,
 }: LocalSeoTemplateProps) {
   return (
     <>

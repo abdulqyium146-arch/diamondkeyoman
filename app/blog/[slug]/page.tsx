@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Clock, Calendar, User, ArrowLeft, Tag, ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/shared/AnimatedSection";
-import { SectionLabel } from "@/components/shared/GoldDivider";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import { blogPosts } from "@/content/blog/posts";
 import { siteConfig } from "@/config/site";
@@ -119,10 +118,10 @@ export default async function BlogPostPage({
                     Understanding the Foundation
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    The topic of {post.title.split(":")[0].toLowerCase()} is one that deserves careful, evidence-based exploration. Whether you are a first-time spa visitor curious about what to expect, or a regular wellness seeker looking to deepen your understanding, the principles covered here apply directly to your health journey in Dubai's unique climate and lifestyle context.
+                    The topic of {post.title.split(":")[0].toLowerCase()} is one that deserves careful, evidence-based exploration. Whether you are a first-time spa visitor curious about what to expect, or a regular wellness seeker looking to deepen your understanding, the principles covered here apply directly to your health journey in Dubai&apos;s unique climate and lifestyle context.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    Dubai's fast-paced, high-achieving environment creates specific wellness challenges that many residents share — chronic stress, sedentary work patterns, air conditioning-induced muscle tension, dehydration from the heat, and the psychological burden of living far from family and support networks. Understanding how professional spa treatments address these challenges is the first step toward building a sustainable wellness routine.
+                    Dubai&apos;s fast-paced, high-achieving environment creates specific wellness challenges that many residents share — chronic stress, sedentary work patterns, air conditioning-induced muscle tension, dehydration from the heat, and the psychological burden of living far from family and support networks. Understanding how professional spa treatments address these challenges is the first step toward building a sustainable wellness routine.
                   </p>
 
                   <h2 className="text-2xl font-serif font-bold text-gray-900 mt-10 mb-4">
@@ -163,7 +162,7 @@ export default async function BlogPostPage({
                     What Our Therapists Recommend
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Based on years of working with Dubai's diverse population — from Emirati nationals to expats from every continent, from young professionals to retirees — our therapists have developed clear recommendations for building a wellness routine that works within the realities of life in the UAE.
+                    Based on years of working with Dubai&apos;s diverse population — from Emirati nationals to expats from every continent, from young professionals to retirees — our therapists have developed clear recommendations for building a wellness routine that works within the realities of life in the UAE.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
                     The most common mistake we see is treating spa visits as reactive rather than proactive — waiting until stress or pain becomes overwhelming before booking a session. The clients who achieve the best long-term outcomes are those who treat regular spa therapy as preventive medicine: a monthly investment in their health that prevents the accumulation of tension, stress, and skin damage that eventually requires emergency intervention.
