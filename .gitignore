@@ -4,6 +4,9 @@ node_modules/
 .pnp.js
 .yarn/install-state.gz
 
+# Lock files (regenerated per platform — avoid Windows→Linux conflicts)
+package-lock.json
+
 # Next.js
 /.next/
 /out/
