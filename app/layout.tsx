@@ -26,8 +26,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Luxury Day Spa in Dubai — Al Qusais`,
-    template: `%s | ${siteConfig.name} Dubai`,
+    default: `${siteConfig.fullName} | Key Duplication & Locksmith in Seeb, Oman`,
+    template: `%s | ${siteConfig.name} — Seeb, Oman`,
   },
   description: siteConfig.description,
   keywords: [
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     ...siteConfig.keywords.secondary,
     ...siteConfig.keywords.local,
   ],
-  authors: [{ name: siteConfig.name, url: siteConfig.url }],
-  creator: siteConfig.name,
-  publisher: siteConfig.name,
+  authors: [{ name: siteConfig.fullName, url: siteConfig.url }],
+  creator: siteConfig.fullName,
+  publisher: siteConfig.fullName,
   robots: {
     index: true,
     follow: true,
@@ -51,26 +51,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_AE",
+    locale: "en_OM",
     url: siteConfig.url,
-    title: `${siteConfig.name} | Luxury Day Spa in Dubai`,
+    title: `${siteConfig.fullName} | Key Duplication & Locksmith — Seeb, Oman`,
     description: siteConfig.description,
-    siteName: siteConfig.name,
+    siteName: siteConfig.fullName,
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+        alt: `${siteConfig.fullName} — ${siteConfig.tagline}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Luxury Day Spa in Dubai`,
+    title: `${siteConfig.fullName} | Key Duplication & Locksmith — Oman`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@diamondkeyspa",
+    creator: "@diamondkeyoman",
   },
   alternates: {
     canonical: siteConfig.url,
@@ -87,15 +87,15 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.webmanifest",
   other: {
-    "geo.region": "AE-DU",
-    "geo.placename": "Dubai, United Arab Emirates",
+    "geo.region": "OM-MA",
+    "geo.placename": "Seeb, Muscat, Oman",
     "geo.position": `${siteConfig.location.lat};${siteConfig.location.lng}`,
     "ICBM": `${siteConfig.location.lat}, ${siteConfig.location.lng}`,
     "business:contact_data:street_address": siteConfig.contact.address.street,
-    "business:contact_data:locality": "Dubai",
-    "business:contact_data:country_name": "United Arab Emirates",
+    "business:contact_data:locality": "Seeb",
+    "business:contact_data:country_name": "Oman",
     "business:contact_data:phone_number": siteConfig.contact.phoneDisplay,
-    "og:locale:alternate": "ar_AE",
+    "og:locale:alternate": "ar_OM",
   },
 };
 

@@ -3,21 +3,21 @@ import { siteConfig } from "@/config/site";
 export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": ["Organization", "LocalBusiness", "HealthAndBeautyBusiness", "DaySpa"],
+    "@type": ["Organization", "LocalBusiness", "Locksmith"],
     "@id": `${siteConfig.url}/#organization`,
-    name: siteConfig.name,
-    legalName: "Diamond Key Spa LLC",
+    name: siteConfig.fullName,
+    alternateName: ["Diamond Key", "المفتاح الماسي"],
     url: siteConfig.url,
     logo: {
       "@type": "ImageObject",
-      url: `${siteConfig.url}/images/logo/diamond-key-spa-logo.png`,
+      url: `${siteConfig.url}/images/logo/diamond-key-logo.png`,
       width: 200,
       height: 60,
     },
     image: [
-      `${siteConfig.url}/images/og/diamond-key-spa-og.jpg`,
-      `${siteConfig.url}/images/gallery/spa-interior-1.jpg`,
-      `${siteConfig.url}/images/gallery/spa-interior-2.jpg`,
+      `${siteConfig.url}/images/og/diamond-key-og.jpg`,
+      `${siteConfig.url}/images/gallery/shop-front.jpg`,
+      `${siteConfig.url}/images/gallery/key-cutting.jpg`,
     ],
     description: siteConfig.description,
     address: {
@@ -25,7 +25,8 @@ export function generateOrganizationSchema() {
       streetAddress: siteConfig.contact.address.street,
       addressLocality: siteConfig.contact.address.city,
       addressRegion: siteConfig.contact.address.state,
-      addressCountry: siteConfig.contact.address.country,
+      postalCode: siteConfig.contact.address.postalCode,
+      addressCountry: "OM",
     },
     geo: {
       "@type": "GeoCoordinates",
@@ -35,8 +36,8 @@ export function generateOrganizationSchema() {
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
     openingHoursSpecification: siteConfig.hours.schema,
-    priceRange: "AED 130 – AED 1200",
-    currenciesAccepted: "AED, USD",
+    priceRange: "OMR 0.5 – OMR 60",
+    currenciesAccepted: "OMR, USD",
     paymentAccepted: "Cash, Credit Card, Debit Card",
     aggregateRating: {
       "@type": "AggregateRating",
@@ -50,21 +51,25 @@ export function generateOrganizationSchema() {
       siteConfig.social.facebook,
     ],
     hasMap: siteConfig.location.googleMapsUrl,
-    servesCuisine: undefined,
     amenityFeature: [
-      { "@type": "LocationFeatureSpecification", name: "Private Treatment Rooms", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Steam Room", value: true },
-      { "@type": "LocationFeatureSpecification", name: "WiFi", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Air Conditioning", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Wheelchair Accessible", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Parking", value: true },
+      { "@type": "LocationFeatureSpecification", name: "On-Site Service", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Same-Day Service", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Emergency Lockout", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Parking Available", value: true },
     ],
     areaServed: [
-      { "@type": "City", name: "Dubai" },
-      { "@type": "AdministrativeArea", name: "Al Qusais" },
-      { "@type": "AdministrativeArea", name: "Al Nahda" },
-      { "@type": "AdministrativeArea", name: "Deira" },
+      { "@type": "City", name: "Muscat" },
+      { "@type": "AdministrativeArea", name: "Seeb" },
+      { "@type": "AdministrativeArea", name: "Bausher" },
+      { "@type": "AdministrativeArea", name: "Mawaleh" },
+      { "@type": "AdministrativeArea", name: "Al Khuwair" },
     ],
+    foundingDate: "2017",
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      minValue: 2,
+      maxValue: 10,
+    },
   };
 }
 
@@ -74,7 +79,7 @@ export function generateWebsiteSchema() {
     "@type": "WebSite",
     "@id": `${siteConfig.url}/#website`,
     url: siteConfig.url,
-    name: siteConfig.name,
+    name: siteConfig.fullName,
     description: siteConfig.description,
     publisher: {
       "@id": `${siteConfig.url}/#organization`,
@@ -87,7 +92,7 @@ export function generateWebsiteSchema() {
       },
       "query-input": "required name=search_term_string",
     },
-    inLanguage: "en-AE",
+    inLanguage: ["en", "ar"],
   };
 }
 
@@ -112,15 +117,15 @@ export function generateServiceSchema(service: {
       "@id": `${siteConfig.url}/#organization`,
     },
     serviceType: service.category,
-    category: "Health and Beauty",
+    category: "Locksmith & Key Services",
     areaServed: {
       "@type": "City",
-      name: "Dubai, United Arab Emirates",
+      name: "Muscat, Oman",
     },
     offers: {
       "@type": "Offer",
       price: service.priceFrom,
-      priceCurrency: "AED",
+      priceCurrency: "OMR",
       availability: "https://schema.org/InStock",
       validFrom: "2024-01-01",
     },
@@ -193,7 +198,7 @@ export function generateArticleSchema(article: {
       "@id": `${siteConfig.url}${article.url}`,
     },
     timeRequired: `PT${article.readTime}M`,
-    inLanguage: "en-AE",
+    inLanguage: "en",
   };
 }
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Shield, Award, Users, Heart, Star, CheckCircle } from "lucide-react";
+import { Shield, Award, Users, Wrench, Star, CheckCircle } from "lucide-react";
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
@@ -8,32 +8,25 @@ import { siteConfig } from "@/config/site";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "About Diamond Key Spa | Dubai's Trusted Luxury Day Spa Since Opening",
+  title: "About Diamond Key | Locksmith & Key Duplication Seeb, Oman — 7+ Years",
   description:
-    "Learn about Diamond Key Spa — Dubai's premier luxury day spa in Al Qusais. Our story, values, certified therapists, and commitment to delivering the finest spa experiences in the UAE.",
-  keywords: ["about diamond key spa", "dubai luxury spa history", "spa therapists dubai", "certified spa dubai"],
+    "Learn about Diamond Key (المفتاح الماسي) — Oman's trusted locksmith and key duplication experts in Seeb, Muscat. 7+ years in business, 51+ Google reviews, 4.0★ rating. Al Khair Street, Seeb.",
+  keywords: ["about diamond key oman", "locksmith seeb history", "key duplication muscat", "trusted locksmith oman"],
   alternates: { canonical: `${siteConfig.url}/about` },
 };
 
 const values = [
-  { icon: Award, title: "Excellence in Every Detail", desc: "We obsess over every element of your experience — from the quality of our oils to the temperature of your room." },
-  { icon: Heart, title: "Genuine Care", desc: "Our team genuinely cares about your wellbeing. Every consultation, every treatment, every aftercare recommendation comes from a place of authentic concern." },
-  { icon: Shield, title: "Trust & Transparency", desc: "We use only certified products, maintain the highest hygiene standards, and are always honest about what's right for your skin and body." },
-  { icon: Users, title: "Expert Knowledge", desc: "Our therapists hold international certifications and continuously update their skills with the latest therapeutic techniques and wellness science." },
+  { icon: Award, title: "7+ Years of Trusted Service", desc: "We have been serving the Seeb and wider Muscat community for over seven years, building a reputation based on honest pricing, reliable results, and professional workmanship." },
+  { icon: Wrench, title: "Advanced Key-Cutting Technology", desc: "Our shop is equipped with professional-grade CNC key-cutting machines and OEM-compatible programming tools capable of handling all major vehicle and lock brands." },
+  { icon: Shield, title: "Honest Pricing & No Surprises", desc: "We quote before we start. The price you hear on the phone is the price you pay. No hidden fees, no inflated dealer-style markups on key programming or fob creation." },
+  { icon: Users, title: "Expert Knowledge", desc: "Our technicians have hands-on experience with hundreds of car makes and models and all standard residential and commercial lock types found in Oman." },
 ];
 
 const stats = [
-  { value: "10+", label: "Years of Expertise" },
-  { value: "5,000+", label: "Clients Served" },
-  { value: "4.76★", label: "Google Rating" },
-  { value: "9+", label: "Premium Services" },
-];
-
-const team = [
-  { name: "Amira Hassan", title: "Head Wellness Therapist", spec: "Deep Tissue · Hot Stone · Aromatherapy", exp: "12 years" },
-  { name: "Fatima Al Zaabi", title: "Senior Hammam Specialist", spec: "Moroccan Bath · Body Scrub · Clay Treatments", exp: "9 years" },
-  { name: "Marco Vitale", title: "Sports & Rehabilitation Therapist", spec: "Deep Tissue · Sports · Trigger Point", exp: "11 years" },
-  { name: "Nadia Al Khatib", title: "Holistic Wellness Practitioner", spec: "Aromatherapy · Reflexology · Energy Work", exp: "8 years" },
+  { value: "7+", label: "Years in Business" },
+  { value: "51+", label: "Google Reviews" },
+  { value: "4.0★", label: "Google Rating" },
+  { value: "7", label: "Expert Services" },
 ];
 
 export default function AboutPage() {
@@ -51,10 +44,10 @@ export default function AboutPage() {
           <Breadcrumbs items={breadcrumbs} className="mb-6 text-gray-400 [&_a]:text-gray-400 [&_a:hover]:text-gold-400" />
           <SectionLabel centered={false}>Our Story</SectionLabel>
           <h1 className="text-4xl md:text-6xl font-serif font-bold mt-2 mb-4">
-            About <span className="text-gold-400">Diamond Key Spa</span>
+            About <span className="text-gold-400">Diamond Key</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
-            Dubai&apos;s most trusted luxury day spa — delivering world-class therapeutic experiences in the heart of Al Qusais.
+            Oman&apos;s trusted key duplication and locksmith experts — serving Seeb and greater Muscat for over seven years.
           </p>
         </div>
       </div>
@@ -65,20 +58,20 @@ export default function AboutPage() {
             <AnimatedSection direction="right">
               <SectionLabel centered={false}>Who We Are</SectionLabel>
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-                A Sanctuary of Wellness <span className="text-gold-500">in the Heart of Dubai</span>
+                Oman&apos;s Key Experts <span className="text-gold-500">in the Heart of Seeb</span>
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Diamond Key Spa was founded on a singular vision: to create a space where the demands of Dubai&apos;s fast-paced life dissolve, and genuine therapeutic healing takes over. Located in Al Qusais Industrial Area 5, we have built a reputation as Dubai&apos;s most trusted luxury day spa — earning a 4.76-star Google rating through consistently exceptional service.
+                  Diamond Key — المفتاح الماسي — was established with a straightforward mission: to give Oman&apos;s drivers and property owners a reliable, affordable, and professional alternative to expensive dealership key services and unqualified key cutters.
                 </p>
                 <p>
-                  Our spa brings together the world&apos;s finest wellness traditions under one roof. From the ancient Moroccan hammam ritual — practiced across North Africa for centuries — to cutting-edge deep tissue therapy, Swedish relaxation massage, and precision-engineered facial treatments, every service we offer is rooted in both tradition and science.
+                  Located on Al Khair Street in Seeb 522, Muscat, our shop is equipped with professional CNC key-cutting machines, OEM-grade automotive programming tools, and a full locksmith toolkit. We handle everything from a simple OMR 0.5 building key copy to complex OMR 60 key fob programming for modern vehicles.
                 </p>
                 <p>
-                  We believe that luxury should be accessible without compromising quality. Our pricing reflects our commitment to offering genuine premium experiences at values that respect our clients. This philosophy has made us the first-choice spa for Dubai residents, UAE nationals, and international visitors alike.
+                  Over seven years we have served Seeb, Bausher, Al Khuwair, Mawaleh, and all areas across Muscat — earning a 4.0-star Google rating from over 51 verified reviews. Our customers return because we do what we say, charge what we quote, and get it right the first time.
                 </p>
                 <p>
-                  Every member of our team is internationally certified, continuously trained, and deeply passionate about their craft. When you visit Diamond Key Spa, you are not simply receiving a service — you are entering a relationship with wellness practitioners who genuinely care about your health and happiness.
+                  We cover car key copying, building key copying, car key programming (all major brands), new key fob creation, lock rekeying, car lockouts, and building lockouts. If it involves a key or a lock in Oman, Diamond Key is your first call.
                 </p>
               </div>
             </AnimatedSection>
@@ -97,10 +90,10 @@ export default function AboutPage() {
                 <div className="flex items-start gap-3">
                   <Star className="w-6 h-6 text-gold-500 flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">4.76 Google Rating</h3>
+                    <h3 className="font-bold text-gray-900 mb-1">4.0 Google Rating</h3>
                     <p className="text-sm text-gray-600">
-                      Earned through over {siteConfig.rating.count} verified reviews from real clients.
-                      Our rating reflects our unwavering commitment to excellence in every treatment.
+                      Earned through {siteConfig.rating.count}+ verified reviews from real customers across Seeb and Muscat.
+                      Our rating reflects consistent professionalism and honest service.
                     </p>
                   </div>
                 </div>
@@ -138,28 +131,27 @@ export default function AboutPage() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-16">
-            <SectionLabel>Meet the Team</SectionLabel>
-            <h2 className="section-heading">Expert Therapists <span className="text-gold-500">Who Care</span></h2>
+            <SectionLabel>What We Handle</SectionLabel>
+            <h2 className="section-heading">All Keys & Locks <span className="text-gold-500">Covered</span></h2>
             <p className="section-subheading mt-4">
-              Every therapist at Diamond Key Spa holds international certifications and brings years of
-              specialized expertise to your treatment.
+              From a basic house key duplicate to full immobiliser programming for a modern SUV — we handle it all at our Seeb shop.
             </p>
           </AnimatedSection>
-          <AnimatedGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" staggerDelay={0.1}>
-            {team.map((member) => (
-              <AnimatedItem key={member.name}>
-                <div className="luxury-card p-6 text-center">
-                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-gold-100 to-gold-200 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-gold-600">
-                      {member.name.charAt(0)}
-                    </span>
-                  </div>
-                  <h3 className="font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-gold-500 text-sm font-medium mt-1">{member.title}</p>
-                  <p className="text-xs text-gray-500 mt-2">{member.spec}</p>
-                  <div className="mt-3 inline-flex items-center gap-1 text-xs text-gray-400 bg-gray-50 px-3 py-1 rounded-full">
-                    <CheckCircle className="w-3 h-3 text-green-500" />
-                    {member.exp} experience
+          <AnimatedGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" staggerDelay={0.08}>
+            {[
+              { label: "All car key types", detail: "Standard, transponder, smart key, flip key" },
+              { label: "All building keys", detail: "Standard, security, Mul-T-Lock, Abloy" },
+              { label: "All major car brands", detail: "Toyota, Nissan, Honda, BMW, Hyundai + more" },
+              { label: "Immobiliser programming", detail: "Chip keys, transponders, OBD pairing" },
+              { label: "Remote key fobs", detail: "Creation, cloning, programming" },
+              { label: "All standard lock types", detail: "Pin tumbler, deadbolt, padlock, rim lock" },
+            ].map((item) => (
+              <AnimatedItem key={item.label}>
+                <div className="luxury-card p-5 flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{item.label}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{item.detail}</p>
                   </div>
                 </div>
               </AnimatedItem>
@@ -172,14 +164,14 @@ export default function AboutPage() {
         <div className="container-custom max-w-2xl">
           <AnimatedSection>
             <h2 className="text-3xl font-serif font-bold mb-4">
-              Ready to Experience <span className="text-gold-400">Diamond Key Spa?</span>
+              Need a Key or Locksmith in <span className="text-gold-400">Seeb, Oman?</span>
             </h2>
             <p className="text-gray-400 mb-8">
-              Join thousands of satisfied clients. Book your appointment today and discover
-              why we&apos;re Dubai&apos;s most trusted luxury day spa.
+              Call or WhatsApp us and we&apos;ll help right away.
+              Our shop is on Al Khair Street, Seeb — open daily from 4:30 PM.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/book-appointment" className="gold-btn">Book Appointment</Link>
+              <a href={`tel:${siteConfig.contact.phone}`} className="gold-btn">Call: {siteConfig.contact.phoneDisplay}</a>
               <Link href="/services" className="ghost-btn border-white/30 text-white hover:bg-white/10">Our Services</Link>
             </div>
           </AnimatedSection>

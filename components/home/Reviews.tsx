@@ -10,57 +10,57 @@ import { siteConfig } from "@/config/site";
 const reviews = [
   {
     id: "1",
-    author: "Sarah Al Mansouri",
+    author: "Ahmed Al Balushi",
     rating: 5,
-    text: "Absolutely the best spa experience I've had in Dubai. The Moroccan Bath was extraordinary — my skin felt like velvet afterwards. The therapists were incredibly professional and made me feel completely at ease. I'll be coming back every month!",
-    date: "2024-11-15",
-    service: "Moroccan Bath",
-    avatar: "S",
+    text: "Very fast service! I needed a spare car key for my Toyota Corolla and they had it cut and ready in 10 minutes. Price was fair and the key works perfectly. Highly recommend Diamond Key in Seeb.",
+    date: "2024-12-01",
+    service: "Car Key Copying",
+    avatar: "A",
   },
   {
     id: "2",
-    author: "Mohammed Al Rashid",
+    author: "Khalid Al Rawahi",
     rating: 5,
-    text: "I came in with severe back pain and left feeling 10 years younger. The deep tissue massage therapist was exceptional — she knew exactly where to work and the pressure was perfect. Diamond Key Spa is genuinely one of the best therapeutic massage centers in the UAE.",
-    date: "2024-11-08",
-    service: "Deep Tissue Massage",
-    avatar: "M",
+    text: "I lost the only key to my Nissan Patrol. Diamond Key programmed a brand-new key including the remote — saved me a huge amount compared to the dealership. Professional and knowledgeable team.",
+    date: "2024-11-20",
+    service: "Car Key Programming",
+    avatar: "K",
   },
   {
     id: "3",
-    author: "Priya Sharma",
-    rating: 5,
-    text: "A hidden gem in Al Qusais! The Royal Retreat Package was worth every dirham. Four hours of pure bliss — hammam, massage, facial — all absolutely top-tier. The facility is immaculate, the atmosphere is so peaceful. I've recommended Diamond Key to all my friends.",
-    date: "2024-10-28",
-    service: "Royal Retreat Package",
-    avatar: "P",
+    author: "Fatima Al Maamari",
+    rating: 4,
+    text: "Good service and reasonable prices. I had the lock on my apartment door rekeyed after moving in. Quick turnaround and the technician was friendly and professional. Will come back.",
+    date: "2024-11-10",
+    service: "Lock Rekeying",
+    avatar: "F",
   },
   {
     id: "4",
-    author: "Elena Petrov",
+    author: "Rashid Al Siyabi",
     rating: 5,
-    text: "My husband and I did the Couples Bliss Package for our anniversary and it was magical. The private suite was beautifully set up, the synchronized massage was deeply relaxing. Staff were attentive without being intrusive. Perfect luxury experience.",
-    date: "2024-10-20",
-    service: "Couples Spa Package",
-    avatar: "E",
+    text: "Excellent! Locked myself out of my car in Seeb and called Diamond Key. They opened it without any damage in under 20 minutes. Really relieved. Trustworthy and professional.",
+    date: "2024-10-28",
+    service: "Car Lockout",
+    avatar: "R",
   },
   {
     id: "5",
-    author: "Tariq Al Zaabi",
-    rating: 5,
-    text: "Professional service at its finest. I've tried many spas across Dubai and Abu Dhabi, and Diamond Key consistently delivers the best aromatherapy experience. The essential oil blends they use are truly therapeutic. Great location, great team.",
-    date: "2024-10-12",
-    service: "Aromatherapy Massage",
-    avatar: "T",
+    author: "Mohammed Al Wahaibi",
+    rating: 4,
+    text: "Got duplicate keys cut for my home and office — both work perfectly. The shop is easy to find on Al Khair Street in Seeb. Prices are very reasonable. Solid, reliable service.",
+    date: "2024-10-15",
+    service: "Building Key Copying",
+    avatar: "M",
   },
   {
     id: "6",
-    author: "Fatima Al Nuaimi",
+    author: "Saif Al Kindi",
     rating: 5,
-    text: "The facial treatment I received completely transformed my skin. The therapist analyzed my skin type and customized the entire treatment. Two weeks later, people keep asking what I'm doing differently! Exceptional knowledge and skill.",
+    text: "They programmed a new key fob for my Honda and it works like the original. Way cheaper than going to the dealer. The team clearly knows their stuff with car key systems. 5 stars.",
     date: "2024-09-30",
-    service: "Facial Treatment",
-    avatar: "F",
+    service: "Key Fob Creation",
+    avatar: "S",
   },
 ];
 
@@ -75,19 +75,19 @@ export default function Reviews() {
   return (
     <section
       className="section-padding bg-white"
-      aria-label="Customer reviews for Diamond Key Spa"
+      aria-label="Customer reviews for Diamond Key locksmith Seeb Oman"
     >
       <div className="container-custom">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <SectionLabel>Client Reviews</SectionLabel>
+          <SectionLabel>Customer Reviews</SectionLabel>
           <h2 className="section-heading">
-            What Our Clients
+            What Our Customers
             <span className="block text-gold-500">Say About Us</span>
           </h2>
 
           <div className="flex items-center justify-center gap-3 mt-6">
             <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
+              {[...Array(4)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-gold-400 text-gold-400" />
               ))}
             </div>
@@ -95,7 +95,7 @@ export default function Reviews() {
               {siteConfig.rating.value}
             </span>
             <span className="text-gray-500">
-              ({siteConfig.rating.count}+ Google Reviews)
+              ({siteConfig.rating.count} Google Reviews)
             </span>
           </div>
         </AnimatedSection>

@@ -6,9 +6,9 @@ import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Diamond Key Spa Dubai",
+  title: "Terms of Service | Diamond Key Oman",
   description:
-    "Terms of service for Diamond Key Spa, Al Qusais, Dubai. Booking policy, cancellation terms, health & safety requirements, and payment conditions.",
+    "Terms of service for Diamond Key, Al Khair Street, Seeb, Muscat, Oman. Service terms, payment conditions, and business policies.",
   alternates: { canonical: `${siteConfig.url}/terms` },
   robots: { index: false },
 };
@@ -17,15 +17,15 @@ const sections = [
   {
     title: "1. Acceptance of Terms",
     content: [
-      "By booking an appointment, visiting Diamond Key Spa, or using our website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our services.",
-      "These Terms constitute the entire agreement between you and Diamond Key Spa regarding our services and supersede any prior agreements. We reserve the right to modify these Terms at any time. Changes are effective upon posting to our website.",
+      "By booking an appointment, visiting Diamond Key, or using our website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our services.",
+      "These Terms constitute the entire agreement between you and Diamond Key regarding our services and supersede any prior agreements. We reserve the right to modify these Terms at any time. Changes are effective upon posting to our website.",
     ],
   },
   {
     title: "2. Booking & Appointments",
     content: [
       "**Making a Booking:** Appointments can be made by telephone, WhatsApp, or our online booking form. A booking is confirmed only when you receive explicit confirmation from our team (by call, WhatsApp, or email). Online booking requests are not confirmed until acknowledged by our staff.",
-      "**Accuracy of Information:** You are responsible for providing accurate contact information, health details, and treatment preferences when booking. Diamond Key Spa is not responsible for issues arising from incorrect information.",
+      "**Accuracy of Information:** You are responsible for providing accurate contact information, health details, and treatment preferences when booking. Diamond Key is not responsible for issues arising from incorrect information.",
       "**Walk-In Appointments:** Walk-in clients are welcome subject to therapist availability. We cannot guarantee immediate availability for walk-in clients, particularly during peak hours (evenings and weekends).",
       "**Group Bookings:** For groups of 5 or more, a minimum 72-hour advance booking is required. Group bookings may require a deposit to secure the reservation.",
     ],
@@ -59,13 +59,13 @@ const sections = [
       "**Pregnancy:** Prenatal massage is available from the second trimester. We do not perform massage during the first trimester. Please inform us of your pregnancy when booking.",
       "**Age Requirement:** You must be 18 years or older to receive spa treatments without parental consent. Clients aged 16–17 require written parental consent and a parent or guardian must be present.",
       "**Hygiene:** Clients are expected to arrive with a reasonable standard of personal hygiene. For body treatments, a shower is provided if required.",
-      "**Disclosure Obligation:** You are responsible for disclosing any relevant medical conditions, allergies, medications, or recent surgeries before treatment. Diamond Key Spa is not liable for adverse reactions resulting from undisclosed conditions.",
+      "**Disclosure Obligation:** You are responsible for disclosing any relevant medical conditions, allergies, medications, or recent surgeries before treatment. Diamond Key is not liable for adverse reactions resulting from undisclosed conditions.",
     ],
   },
   {
     title: "6. Client Conduct",
     content: [
-      "Diamond Key Spa is a professional therapeutic environment. All clients are expected to conduct themselves respectfully toward staff and other clients.",
+      "Diamond Key is a professional therapeutic environment. All clients are expected to conduct themselves respectfully toward staff and other clients.",
       "**Zero Tolerance:** We have a zero-tolerance policy for sexual harassment, inappropriate requests, aggressive or threatening behaviour, discrimination, or intoxication. Any client exhibiting such behaviour will be asked to leave immediately and may be charged the full treatment fee.",
       "**Mobile Devices:** We ask that mobile phones be silenced or switched off in treatment areas and relaxation lounges to preserve the peaceful environment for all clients.",
       "**Punctuality:** Please aim to arrive 10 minutes before your scheduled appointment to complete any health forms and prepare for treatment. Late arrivals may result in a reduced treatment time, with full treatment charges still applicable.",
@@ -74,29 +74,29 @@ const sections = [
   {
     title: "7. Liability",
     content: [
-      "**Personal Belongings:** Diamond Key Spa is not responsible for loss or damage to personal belongings brought onto the premises. We recommend leaving valuables at home.",
-      "**Treatment Outcomes:** Spa treatments are not a substitute for medical treatment. While we strive to deliver the highest quality treatments, individual results and experiences may vary. Diamond Key Spa does not guarantee specific health outcomes from treatments.",
-      "**Allergic Reactions:** While we take every precaution to avoid allergic reactions and we review all known allergies during consultation, Diamond Key Spa cannot be held liable for reactions to products used in treatments if you have not disclosed known allergies prior to your treatment.",
+      "**Personal Belongings:** Diamond Key is not responsible for loss or damage to personal belongings brought onto the premises. We recommend leaving valuables at home.",
+      "**Treatment Outcomes:** Spa treatments are not a substitute for medical treatment. While we strive to deliver the highest quality treatments, individual results and experiences may vary. Diamond Key does not guarantee specific health outcomes from treatments.",
+      "**Allergic Reactions:** While we take every precaution to avoid allergic reactions and we review all known allergies during consultation, Diamond Key cannot be held liable for reactions to products used in treatments if you have not disclosed known allergies prior to your treatment.",
       "**Force Majeure:** We are not liable for any failure to perform our obligations due to circumstances beyond our reasonable control, including natural disasters, government-imposed restrictions, or public health emergencies.",
     ],
   },
   {
     title: "8. Intellectual Property",
     content: [
-      "All content on this website, including text, images, graphics, logos, and design, is the property of Diamond Key Spa and is protected by applicable intellectual property laws. You may not reproduce, distribute, or use any content from this website without our prior written consent.",
+      "All content on this website, including text, images, graphics, logos, and design, is the property of Diamond Key and is protected by applicable intellectual property laws. You may not reproduce, distribute, or use any content from this website without our prior written consent.",
     ],
   },
   {
     title: "9. Governing Law",
     content: [
-      "These Terms of Service are governed by and construed in accordance with the laws of the United Arab Emirates, specifically the laws of the Emirate of Dubai. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts of Dubai, UAE.",
+      "These Terms of Service are governed by and construed in accordance with the laws of the Sultanate of Oman. Any disputes arising from these Terms shall be subject to the jurisdiction of the courts of Muscat, Oman.",
     ],
   },
   {
     title: "10. Contact",
     content: [
       "For questions about these Terms of Service, please contact us:",
-      `Diamond Key Spa · Al Qusais Industrial Area 5, Dubai, UAE\nPhone / WhatsApp: ${siteConfig.contact.phoneDisplay}\nEmail: ${siteConfig.contact.email}`,
+      `Diamond Key · Al Khair Street, Seeb 522, Muscat, Oman\nPhone / WhatsApp: ${siteConfig.contact.phoneDisplay}`,
     ],
   },
 ];
@@ -127,7 +127,7 @@ export default function TermsPage() {
           <Breadcrumbs items={breadcrumbs} className="mb-6 text-gray-400 [&_a]:text-gray-400 [&_a:hover]:text-gold-400" />
           <SectionLabel centered={false}>Legal</SectionLabel>
           <h1 className="text-3xl md:text-5xl font-serif font-bold mt-2 mb-3">Terms of Service</h1>
-          <p className="text-gray-400 text-sm">Last updated: January 2025 · Diamond Key Spa, Dubai, UAE</p>
+          <p className="text-gray-400 text-sm">Last updated: January 2025 · Diamond Key, Seeb, Muscat, Oman</p>
         </div>
       </div>
 
@@ -136,7 +136,7 @@ export default function TermsPage() {
           <AnimatedSection>
             <div className="luxury-card p-6 mb-10 border-l-4 border-gold-400">
               <p className="text-gray-600 leading-relaxed text-sm">
-                Please read these Terms of Service carefully before booking an appointment or using Diamond Key Spa&apos;s services.
+                Please read these Terms of Service carefully before booking an appointment or using Diamond Key&apos;s services.
                 These terms govern your use of our spa services and website. By proceeding with a booking,
                 you acknowledge that you have read, understood, and agreed to these terms.
               </p>
@@ -172,7 +172,7 @@ export default function TermsPage() {
             </div>
 
             <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-xs text-gray-400">Governed by the laws of the United Arab Emirates.</p>
+              <p className="text-xs text-gray-400">Governed by the laws of the Sultanate of Oman.</p>
               <div className="flex gap-3">
                 <Link href="/privacy-policy" className="text-sm text-gold-500 hover:text-gold-600 font-medium">Privacy Policy</Link>
                 <Link href="/contact" className="text-sm text-gold-500 hover:text-gold-600 font-medium">Contact Us</Link>

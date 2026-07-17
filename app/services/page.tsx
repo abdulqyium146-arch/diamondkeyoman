@@ -10,13 +10,13 @@ import { siteConfig } from "@/config/site";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "All Spa Services | Diamond Key Spa Dubai — Massage, Moroccan Bath, Facial & More",
+  title: "Locksmith & Key Services | Diamond Key Seeb, Muscat, Oman",
   description:
-    "Explore Diamond Key Spa's complete menu of luxury spa services in Dubai. Body massage, Moroccan hammam, facial treatments, aromatherapy, deep tissue, hot stone, foot reflexology & spa packages.",
+    "All locksmith and key services from Diamond Key in Seeb, Muscat. Car key copying, building key copying, car key programming, key fob creation, lock rekeying, car lockout & building lockout. From OMR 0.5.",
   keywords: [
-    "spa services dubai", "massage therapy dubai", "moroccan bath dubai", "facial treatment dubai",
-    "body scrub dubai", "aromatherapy dubai", "deep tissue massage dubai", "hot stone dubai",
-    "foot reflexology dubai", "luxury spa menu dubai",
+    "locksmith services Seeb", "key duplication Muscat", "car key copying Oman", "key programming Seeb",
+    "key fob creation Muscat", "lock rekeying Oman", "car lockout Seeb", "building lockout Muscat",
+    "emergency locksmith Oman", "key cutting Seeb",
   ],
   alternates: { canonical: `${siteConfig.url}/services` },
 };
@@ -36,11 +36,11 @@ export default function ServicesPage() {
           <Breadcrumbs items={breadcrumbs} className="mb-6 text-gray-400 [&_a]:text-gray-400 [&_a:hover]:text-gold-400" />
           <SectionLabel centered={false}>All Services</SectionLabel>
           <h1 className="text-4xl md:text-6xl font-serif font-bold mt-2 mb-4">
-            Premium Spa <span className="text-gold-400">Treatments</span>
+            Key Duplication & <span className="text-gold-400">Locksmith Services</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
-            Nine expertly delivered spa and wellness treatments — each designed to restore,
-            rejuvenate, and revitalize your body and mind.
+            Seven professional key and locksmith services — car keys, building keys, programming,
+            fob creation, rekeying, and emergency lockout in Seeb, Muscat, Oman.
           </p>
         </div>
       </div>
@@ -115,15 +115,15 @@ export default function ServicesPage() {
         <div className="container-custom text-center">
           <AnimatedSection>
             <h2 className="text-3xl font-serif font-bold mb-4">
-              Not Sure Which Treatment Is Right for You?
+              Not Sure Which Service You Need?
             </h2>
             <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-              Our expert therapists offer free consultations to help you choose the perfect
-              treatment for your needs, goals, and health profile.
+              Call or WhatsApp us and describe your situation. We&apos;ll advise the right
+              service and confirm availability at our Seeb shop.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/book-appointment" className="gold-btn">Book Consultation</Link>
-              <a href="tel:+971544907283" className="ghost-btn">Call: +971 54 490 7283</a>
+              <a href={`tel:${siteConfig.contact.phone}`} className="gold-btn">Call: {siteConfig.contact.phoneDisplay}</a>
+              <Link href="/contact" className="ghost-btn">Contact Us</Link>
             </div>
           </AnimatedSection>
         </div>

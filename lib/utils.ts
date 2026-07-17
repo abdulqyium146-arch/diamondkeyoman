@@ -5,11 +5,11 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatPrice(amount: number, currency = "AED"): string {
+export function formatPrice(amount: number, currency = "OMR"): string {
   return `${currency} ${amount.toLocaleString()}`;
 }
 
-export function formatPriceRange(from: number, to?: number, currency = "AED"): string {
+export function formatPriceRange(from: number, to?: number, currency = "OMR"): string {
   if (to) {
     return `${currency} ${from}–${to}`;
   }
@@ -30,7 +30,7 @@ export function truncate(text: string, length: number): string {
 }
 
 export function formatDate(dateString: string): string {
-  return new Date(dateString).toLocaleDateString("en-AE", {
+  return new Date(dateString).toLocaleDateString("en-OM", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -48,19 +48,19 @@ export function getStarRating(rating: number): string {
 }
 
 export function generateWhatsAppUrl(message?: string): string {
-  const phone = "971544907283";
+  const phone = "96890974040";
   const defaultMessage =
-    "Hello Diamond Key Spa! I'd like to book an appointment.";
+    "Hello Diamond Key! I need key duplication or locksmith service.";
   const encodedMessage = encodeURIComponent(message || defaultMessage);
   return `https://wa.me/${phone}?text=${encodedMessage}`;
 }
 
 export function generateCallUrl(): string {
-  return "tel:+971544907283";
+  return "tel:+96890974040";
 }
 
 export function absoluteUrl(path: string): string {
-  return `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.diamondkeyspa.com"}${path}`;
+  return `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.diamondkeyoman.com"}${path}`;
 }
 
 export const TRANSITION_EASE = [0.25, 0.1, 0.25, 1] as const;

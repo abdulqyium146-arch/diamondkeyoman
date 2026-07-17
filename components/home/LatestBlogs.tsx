@@ -10,18 +10,18 @@ export default function LatestBlogs() {
   return (
     <section
       className="section-padding bg-gray-50"
-      aria-label="Latest spa wellness articles from Diamond Key Spa"
+      aria-label="Latest articles from Diamond Key locksmith Seeb Oman"
     >
       <div className="container-custom">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <SectionLabel>Wellness Blog</SectionLabel>
+          <SectionLabel>Our Blog</SectionLabel>
           <h2 className="section-heading">
-            Expert Spa &amp; Wellness
-            <span className="block text-gold-500">Insights</span>
+            Keys, Locks &amp; Locksmith
+            <span className="block text-gold-500">Tips & Guides</span>
           </h2>
           <p className="section-subheading mt-4">
-            Discover the science behind luxury spa treatments, wellness tips, and expert guidance
-            from our certified therapists.
+            Practical advice on car key care, home security, lock maintenance, and what to do
+            when you&apos;re locked out — from our experienced team in Seeb, Oman.
           </p>
         </AnimatedSection>
 

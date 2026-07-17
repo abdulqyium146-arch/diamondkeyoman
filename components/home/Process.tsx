@@ -1,35 +1,35 @@
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
-import { Calendar, ClipboardList, Sparkles, Star } from "lucide-react";
+import { Phone, Search, Wrench, CheckCircle } from "lucide-react";
 
 const steps = [
   {
     step: "01",
-    icon: Calendar,
-    title: "Book Your Session",
+    icon: Phone,
+    title: "Call or WhatsApp Us",
     description:
-      "Choose your treatment and preferred time slot through our website, WhatsApp, or by calling directly. Walk-ins are welcome based on availability.",
+      "Contact us by phone or WhatsApp to describe your key or locksmith need. Walk-ins are welcome at our Seeb shop during opening hours (4:30 PM daily).",
   },
   {
     step: "02",
-    icon: ClipboardList,
-    title: "Personal Consultation",
+    icon: Search,
+    title: "We Assess Your Key",
     description:
-      "Arrive 10 minutes early for a private consultation. Your therapist reviews your health profile, preferences, and goals to customize your treatment.",
+      "Bring your original key or vehicle for our technician to assess. We identify the key type, check blank availability, and give you an upfront price quote.",
   },
   {
     step: "03",
-    icon: Sparkles,
-    title: "Your Luxury Treatment",
+    icon: Wrench,
+    title: "Cut & Program",
     description:
-      "Surrender to expert hands in our serene, beautifully appointed treatment rooms. Premium products, tailored techniques, and pure therapeutic bliss.",
+      "We precision-cut your key and, where needed, program the transponder chip or remote fob to your vehicle using OEM-grade diagnostic equipment.",
   },
   {
     step: "04",
-    icon: Star,
-    title: "Aftercare & Wellness",
+    icon: CheckCircle,
+    title: "Test & Hand Over",
     description:
-      "Receive personalized aftercare advice, complimentary refreshments, and guidance on maintaining your results at home. We're here for your long-term wellness.",
+      "We test every key before handing it over — in the ignition, in the door, and all remote functions. You only leave when everything works perfectly.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function Process() {
   return (
     <section
       className="section-padding bg-luxury-dark text-white relative overflow-hidden"
-      aria-label="How Diamond Key Spa works"
+      aria-label="How Diamond Key works"
     >
       <div className="absolute inset-0 pointer-events-none">
         <div
@@ -52,14 +52,14 @@ export default function Process() {
 
       <div className="container-custom relative z-10">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <SectionLabel>Your Journey</SectionLabel>
+          <SectionLabel>How It Works</SectionLabel>
           <h2 className="section-heading text-white">
-            Your Spa Experience
-            <span className="block text-gold-400">Step by Step</span>
+            Getting Your Key Done
+            <span className="block text-gold-400">in 4 Simple Steps</span>
           </h2>
           <p className="section-subheading mt-4 text-gray-400">
-            From the moment you book to the moment you leave glowing — every step of your Diamond
-            Key Spa journey is thoughtfully designed for maximum comfort and results.
+            From your first call to holding a perfectly working key — our process is
+            transparent, fast, and stress-free. No jargon, no hidden fees.
           </p>
         </AnimatedSection>
 

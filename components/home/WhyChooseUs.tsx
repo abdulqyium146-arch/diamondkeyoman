@@ -1,43 +1,43 @@
-import { Shield, Heart, Leaf, Users, Award, Star } from "lucide-react";
+import { Shield, Clock, Wrench, Users, Award, Zap } from "lucide-react";
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
 
 const reasons = [
   {
     icon: Award,
-    title: "Internationally Certified Therapists",
+    title: "7+ Years of Trusted Service",
     description:
-      "Every therapist at Diamond Key Spa holds international certifications and undergoes continuous training to deliver treatments that meet the highest global standards of therapeutic excellence.",
+      "Diamond Key has been serving Seeb and Muscat since 2017. Our longevity speaks for itself — customers return because they trust our workmanship and fair pricing.",
   },
   {
-    icon: Leaf,
-    title: "Premium Organic Products",
+    icon: Wrench,
+    title: "Advanced Key-Cutting Technology",
     description:
-      "We use only the finest certified organic oils, botanical extracts, and mineral-rich ingredients sourced from Morocco, Europe, and Asia — gentle on your skin, powerful in results.",
+      "We use professional-grade CNC key-cutting machines and OEM-quality transponder programmers to handle modern vehicle keys with precision accuracy.",
   },
   {
-    icon: Heart,
-    title: "Personalized Treatment Plans",
+    icon: Zap,
+    title: "Same-Day Service — While You Wait",
     description:
-      "Before every session, we conduct a thorough consultation to understand your specific needs, preferences, and health considerations, then customize each treatment exclusively for you.",
+      "Most standard car and building key duplications are completed in under 15 minutes. Car key programming typically takes 30–60 minutes on-site.",
   },
   {
     icon: Shield,
-    title: "Pristine Hygiene Standards",
+    title: "All Brands & Models",
     description:
-      "Your safety is our highest priority. We maintain hospital-grade cleanliness protocols, use single-use disposables where required, and sterilize all equipment between each client.",
+      "From basic door keys to Toyota, Nissan, Honda, BMW, and Land Rover transponder keys — we have the equipment and expertise to handle them all.",
   },
   {
     icon: Users,
-    title: "Dedicated to Your Wellness",
+    title: "Honest Pricing — No Hidden Fees",
     description:
-      "From the moment you arrive to the moment you leave, our team is focused entirely on making your spa experience seamless, comfortable, and truly transformative.",
+      "We quote upfront before we start any work. No surprises. Our prices are significantly lower than dealerships for the same quality of service.",
   },
   {
-    icon: Star,
-    title: "Luxury at Every Level",
+    icon: Clock,
+    title: "Emergency Lockout Support",
     description:
-      "4.76-star Google rating earned through consistently exceptional service. Over 5,000 satisfied clients trust Diamond Key Spa as Dubai's premier destination for luxury wellness.",
+      "Locked out of your car or home? Call us. We respond quickly and use non-destructive techniques to open locks without damage to your property.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
   return (
     <section
       className="section-padding bg-luxury-dark text-white relative overflow-hidden"
-      aria-label="Why choose Diamond Key Spa"
+      aria-label="Why choose Diamond Key locksmith Seeb Oman"
     >
       <div className="absolute inset-0 pointer-events-none">
         <div className="floating-blob w-96 h-96 bg-gold-500 -top-20 -right-20 opacity-[0.05]" />
@@ -65,28 +65,28 @@ export default function WhyChooseUs() {
           <AnimatedSection direction="right">
             <SectionLabel centered={false}>Why Diamond Key</SectionLabel>
             <h2 className="section-heading text-white">
-              The Definitive Choice
-              <span className="block text-gold-400">for Luxury Wellness</span>
-              <span className="block text-white">in Dubai</span>
+              The Trusted Choice
+              <span className="block text-gold-400">for Keys & Locksmith</span>
+              <span className="block text-white">in Seeb, Oman</span>
             </h2>
             <p className="mt-6 text-gray-300 text-lg leading-relaxed">
-              At Diamond Key Spa, luxury isn&apos;t just an aesthetic — it&apos;s a philosophy
-              embedded in every aspect of your experience. From our carefully curated treatment
-              menu to our meticulously designed interiors, every detail is crafted to exceed your
-              expectations.
+              At Diamond Key (المفتاح الماسي), we combine 7+ years of hands-on
+              experience with professional-grade equipment to deliver key
+              duplication and locksmith services that you can count on — every
+              time.
             </p>
             <p className="mt-4 text-gray-400 leading-relaxed">
-              Our spa has earned recognition as one of Dubai&apos;s top wellness destinations,
-              trusted by residents and visitors alike. Whether you&apos;re seeking relief from
-              chronic pain, rejuvenation after a demanding schedule, or simply a moment of
-              pure luxury — Diamond Key Spa delivers an experience unmatched in the region.
+              Whether you need a simple spare key for your home, a transponder
+              key programmed for your car, or you&apos;re locked out and need fast
+              help — we have the skills, tools, and track record to solve it
+              quickly and affordably.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-6">
               {[
-                { value: "4.76★", label: "Google Rating" },
-                { value: "5K+", label: "Happy Clients" },
-                { value: "10+", label: "Years of Excellence" },
+                { value: "4.0★", label: "Google Rating" },
+                { value: "51+", label: "Reviews" },
+                { value: "7+", label: "Years in Oman" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="text-2xl font-serif font-bold text-gold-400">

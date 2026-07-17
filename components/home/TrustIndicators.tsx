@@ -1,53 +1,53 @@
-import { Star, Shield, Award, Clock, Users, MapPin } from "lucide-react";
+import { Star, Shield, Wrench, Clock, Key, MapPin } from "lucide-react";
 import { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { siteConfig } from "@/config/site";
 
 const indicators = [
   {
     icon: Star,
-    value: "4.76★",
+    value: "4.0★",
     label: "Google Rating",
-    sublabel: `${siteConfig.rating.count}+ Verified Reviews`,
+    sublabel: `${siteConfig.rating.count} Verified Reviews`,
     color: "text-gold-500",
     bg: "bg-gold-50",
   },
   {
-    icon: Users,
-    value: "5,000+",
-    label: "Happy Clients",
-    sublabel: "Since our opening",
+    icon: Wrench,
+    value: "7+",
+    label: "Years in Business",
+    sublabel: "Trusted since 2017",
     color: "text-blue-500",
     bg: "bg-blue-50",
   },
   {
-    icon: Award,
-    value: "9+",
+    icon: Key,
+    value: "7",
     label: "Expert Services",
-    sublabel: "Premium treatments",
+    sublabel: "Keys & locksmith",
     color: "text-purple-500",
     bg: "bg-purple-50",
   },
   {
     icon: Shield,
-    value: "100%",
-    label: "Certified Therapists",
-    sublabel: "Internationally trained",
+    value: "All Brands",
+    label: "Cars & Buildings",
+    sublabel: "Toyota, Nissan & more",
     color: "text-green-500",
     bg: "bg-green-50",
   },
   {
     icon: Clock,
-    value: "Open Daily",
-    label: "Until 12:30 AM",
-    sublabel: "7 days a week",
+    value: "Same Day",
+    label: "Service",
+    sublabel: "Opens 4:30 PM daily",
     color: "text-orange-500",
     bg: "bg-orange-50",
   },
   {
     icon: MapPin,
-    value: "Al Qusais",
-    label: "Dubai, UAE",
-    sublabel: "Easy to find",
+    value: "Seeb",
+    label: "Muscat, Oman",
+    sublabel: "Al Khair Street",
     color: "text-red-500",
     bg: "bg-red-50",
   },
@@ -57,7 +57,7 @@ export default function TrustIndicators() {
   return (
     <section
       className="py-12 bg-white border-b border-gray-100"
-      aria-label="Why choose Diamond Key Spa"
+      aria-label="Why choose Diamond Key locksmith Seeb"
     >
       <div className="container-custom">
         <AnimatedGroup

@@ -15,11 +15,12 @@ import { navigation } from "@/config/navigation";
 import { generateWhatsAppUrl } from "@/lib/utils";
 
 const LOGO_WHITE_SVG = (
-  <svg viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-auto">
+  <svg viewBox="0 0 220 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-auto">
     <path d="M8 25 L18 10 L28 25 L18 40 Z" fill="#C89B3C" opacity="0.9" />
     <path d="M13 25 L18 16 L23 25 L18 34 Z" fill="#f9f0d5" />
-    <text x="36" y="22" fontFamily="Georgia, serif" fontSize="14" fontWeight="700" fill="#ffffff" letterSpacing="1">DIAMOND KEY</text>
-    <text x="36" y="38" fontFamily="Georgia, serif" fontSize="9" fontWeight="400" fill="#C89B3C" letterSpacing="3">SPA · DUBAI</text>
+    <text x="36" y="20" fontFamily="Georgia, serif" fontSize="14" fontWeight="700" fill="#ffffff" letterSpacing="1">DIAMOND KEY</text>
+    <text x="36" y="33" fontFamily="Georgia, serif" fontSize="8" fontWeight="400" fill="#C89B3C" letterSpacing="2">المفتاح الماسي</text>
+    <text x="36" y="44" fontFamily="Georgia, serif" fontSize="7.5" fontWeight="400" fill="#888" letterSpacing="2.5">SEEB · OMAN</text>
   </svg>
 );
 
@@ -37,16 +38,16 @@ export default function Footer() {
           <div className="lg:col-span-1">
             {LOGO_WHITE_SVG}
             <p className="mt-4 text-gray-400 text-sm leading-relaxed">
-              Dubai&apos;s premier luxury day spa in Al Qusais. Experience world-class massage therapy,
-              authentic Moroccan hammam, and advanced facial treatments in an atmosphere of
-              unparalleled elegance.
+              Oman&apos;s trusted key duplication and locksmith experts in Seeb, Muscat.
+              Car key copying, digital key programming, remote fob creation, lock rekeying,
+              and emergency lockout service — 7+ years serving Oman.
             </p>
 
             <div className="mt-6 flex items-center gap-2">
-              {[...Array(5)].map((_, i) => (
+              {[...Array(4)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />
               ))}
-              <span className="text-gold-400 font-bold text-sm ml-1">4.76</span>
+              <span className="text-gold-400 font-bold text-sm ml-1">4.0</span>
               <span className="text-gray-500 text-sm">on Google</span>
             </div>
 
@@ -110,7 +111,7 @@ export default function Footer() {
             </ul>
 
             <h3 className="text-sm font-bold uppercase tracking-widest text-gold-400 mb-5 mt-8">
-              Local Areas
+              Service Areas
             </h3>
             <ul className="space-y-2">
               {navigation.footer.localSeo.map((item) => (
@@ -135,10 +136,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-gray-300">
-                    Al Qusais Industrial Area 5
-                  </p>
-                  <p className="text-sm text-gray-400">Dubai, UAE</p>
+                  <p className="text-sm text-gray-300">Al Khair Street</p>
+                  <p className="text-sm text-gray-400">Seeb 522, Muscat, Oman</p>
                   <a
                     href={siteConfig.location.googleMapsUrl}
                     target="_blank"
@@ -153,7 +152,7 @@ export default function Footer() {
                 <Clock className="w-4 h-4 text-gold-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-300">Open Daily</p>
-                  <p className="text-sm text-gray-400">9:00 AM – 12:30 AM</p>
+                  <p className="text-sm text-gray-400">Opens 4:30 PM</p>
                 </div>
               </li>
               <li>
@@ -193,12 +192,12 @@ export default function Footer() {
               </li>
             </ul>
 
-            <Link
-              href="/book-appointment"
+            <a
+              href={`tel:${siteConfig.contact.phone}`}
               className="mt-6 gold-btn !py-3 !px-6 text-sm block text-center"
             >
-              Book Your Appointment
-            </Link>
+              Call Us Now
+            </a>
           </div>
         </div>
       </div>
@@ -206,7 +205,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-custom py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500">
-            © {currentYear} {siteConfig.name}. All rights reserved.
+            © {currentYear} {siteConfig.fullName}. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-gray-500">
             {navigation.footer.legal.map((item, i) => (
@@ -219,7 +218,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="text-xs text-gray-600">
-            Luxury Day Spa · Dubai, UAE 🇦🇪
+            Key Duplication & Locksmith · Seeb, Muscat, Oman 🇴🇲
           </p>
         </div>
       </div>

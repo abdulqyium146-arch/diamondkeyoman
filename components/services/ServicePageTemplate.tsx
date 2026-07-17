@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Clock, Check, ArrowRight, Phone, Calendar, Star } from "lucide-react";
+import { Clock, Check, ArrowRight, Phone, MessageCircle, Star } from "lucide-react";
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
@@ -55,11 +55,11 @@ export default function ServicePageTemplate({
             </div>
             <div className="bg-gold-500/20 border border-gold-500/30 rounded-full px-4 py-2">
               <span className="text-gold-300 font-semibold text-sm">
-                {formatPriceRange(priceFrom, priceTo)} {siteConfig.currency}
+                {formatPriceRange(priceFrom, priceTo, siteConfig.currency)}
               </span>
             </div>
             <div className="flex items-center gap-1 text-sm text-gray-400">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-gold-400 text-gold-400" />)}
+              {[...Array(4)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-gold-400 text-gold-400" />)}
               <span className="ml-1">{siteConfig.rating.value} Rating</span>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function ServicePageTemplate({
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <AnimatedSection direction="right">
-                <SectionLabel centered={false}>About This Treatment</SectionLabel>
+                <SectionLabel centered={false}>About This Service</SectionLabel>
                 <h2 className="text-3xl font-serif font-bold mb-6">
                   What Is <span className="text-gold-500">{name}?</span>
                 </h2>
@@ -112,7 +112,7 @@ export default function ServicePageTemplate({
 
               <div className="grid md:grid-cols-2 gap-8">
                 <AnimatedSection direction="right" delay={0.2}>
-                  <h2 className="text-xl font-serif font-bold mb-4">Who Is It For?</h2>
+                  <h2 className="text-xl font-serif font-bold mb-4">Who Is This For?</h2>
                   <ul className="space-y-2">
                     {whoIsItFor.map((item) => (
                       <li key={item} className="flex items-center gap-2 text-sm text-gray-600">
@@ -123,7 +123,7 @@ export default function ServicePageTemplate({
                   </ul>
                 </AnimatedSection>
                 <AnimatedSection direction="left" delay={0.2}>
-                  <h2 className="text-xl font-serif font-bold mb-4">Preparation Tips</h2>
+                  <h2 className="text-xl font-serif font-bold mb-4">What to Bring</h2>
                   <ul className="space-y-2">
                     {preparation.map((item) => (
                       <li key={item} className="flex items-center gap-2 text-sm text-gray-600">
@@ -136,7 +136,7 @@ export default function ServicePageTemplate({
               </div>
 
               <AnimatedSection direction="right" delay={0.25}>
-                <h2 className="text-xl font-serif font-bold mb-4">Aftercare Advice</h2>
+                <h2 className="text-xl font-serif font-bold mb-4">After the Service</h2>
                 <ul className="space-y-2">
                   {aftercare.map((item) => (
                     <li key={item} className="flex items-center gap-2 text-sm text-gray-600">
@@ -166,26 +166,26 @@ export default function ServicePageTemplate({
             <div className="space-y-5">
               <div className="sticky top-28 space-y-5">
                 <div className="luxury-card p-6">
-                  <h3 className="font-bold text-gray-900 mb-4">Book This Treatment</h3>
+                  <h3 className="font-bold text-gray-900 mb-4">Enquire About This Service</h3>
                   <div className="space-y-3 mb-5 text-sm text-gray-600">
                     <div className="flex justify-between"><span>Duration</span><span className="font-semibold">{duration}</span></div>
                     <div className="flex justify-between"><span>Starting from</span>
-                      <span className="font-semibold text-gold-500">AED {priceFrom}</span>
+                      <span className="font-semibold text-gold-500">{siteConfig.currency} {priceFrom}</span>
                     </div>
-                    <div className="flex justify-between"><span>Availability</span><span className="text-green-600 font-semibold">Daily 9AM–12:30AM</span></div>
+                    <div className="flex justify-between"><span>Availability</span><span className="text-green-600 font-semibold">Opens 4:30 PM Daily</span></div>
                   </div>
                   <div className="space-y-3">
-                    <Link href="/book-appointment" className="gold-btn !py-3 block text-center text-sm flex items-center justify-center gap-2">
-                      <Calendar className="w-4 h-4" /> Book Appointment
-                    </Link>
-                    <a href={`tel:${siteConfig.contact.phone}`} className="ghost-btn !py-3 block text-center text-sm flex items-center justify-center gap-2">
-                      <Phone className="w-4 h-4" /> Call to Book
+                    <a href={`tel:${siteConfig.contact.phone}`} className="gold-btn !py-3 block text-center text-sm flex items-center justify-center gap-2">
+                      <Phone className="w-4 h-4" /> Call Now
                     </a>
-                    <a href={generateWhatsAppUrl(`Hi! I'd like to book a ${name} at Diamond Key Spa.`)}
+                    <a href={generateWhatsAppUrl(`Hi! I need ${name} service.`)}
                       target="_blank" rel="noopener noreferrer"
-                      className="block text-center py-3 px-6 rounded-full bg-[#25D366]/10 border border-[#25D366]/30 text-[#25D366] text-sm font-semibold hover:bg-[#25D366]/20 transition-all">
-                      WhatsApp Us
+                      className="block text-center py-3 px-6 rounded-full bg-[#25D366]/10 border border-[#25D366]/30 text-[#25D366] text-sm font-semibold hover:bg-[#25D366]/20 transition-all flex items-center justify-center gap-2">
+                      <MessageCircle className="w-4 h-4" /> WhatsApp Us
                     </a>
+                    <Link href="/contact" className="ghost-btn !py-3 block text-center text-sm flex items-center justify-center gap-2">
+                      Contact Us
+                    </Link>
                   </div>
                 </div>
 
@@ -205,11 +205,11 @@ export default function ServicePageTemplate({
 
                 <div className="p-5 rounded-2xl bg-gold-50 border border-gold-100">
                   <div className="flex items-center gap-2 mb-2">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />)}
+                    {[...Array(4)].map((_, i) => <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />)}
                     <span className="font-bold text-gray-900 text-sm">{siteConfig.rating.value}</span>
                   </div>
                   <p className="text-xs text-gray-500">
-                    Rated {siteConfig.rating.value} by {siteConfig.rating.count}+ verified Google reviewers
+                    Rated {siteConfig.rating.value} by {siteConfig.rating.count} verified Google reviewers
                   </p>
                 </div>
               </div>

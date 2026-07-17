@@ -7,69 +7,69 @@ import { siteConfig } from "@/config/site";
 import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "FAQ | Diamond Key Spa Dubai — All Your Spa Questions Answered",
+  title: "FAQ | Diamond Key Oman — Locksmith & Key Duplication Questions Answered",
   description:
-    "Complete FAQ for Diamond Key Spa, Al Qusais, Dubai. 30+ answers about treatments, prices, booking, location, hours, hygiene, and what to expect. Open daily 9AM–12:30AM.",
+    "Frequently asked questions about Diamond Key's locksmith and key services in Seeb, Muscat, Oman. Prices, services, car key programming, lockouts, and more. Call +968 9097 4040.",
   keywords: [
-    "diamond key spa faq", "spa questions dubai", "massage faq dubai", "spa booking questions",
-    "spa dubai price faq", "how to book spa dubai", "spa hygiene standards dubai",
+    "locksmith faq oman", "key duplication questions muscat", "car key programming faq seeb",
+    "key fob cost oman", "lockout service faq muscat", "diamond key questions",
   ],
   alternates: { canonical: `${siteConfig.url}/faq` },
 };
 
 const faqCategories = [
   {
-    name: "Booking & Reservations",
+    name: "Key Duplication",
     faqs: [
-      { q: "How do I book an appointment at Diamond Key Spa?", a: "You can book in three ways: call us directly at +971 54 490 7283, send a WhatsApp message to the same number, or use the online booking form on our website. We recommend calling or WhatsApp for same-day or next-day bookings to confirm availability immediately." },
-      { q: "Do I need to book in advance or can I walk in?", a: "Walk-ins are welcome based on therapist availability, but we strongly recommend booking at least 24 hours in advance to guarantee your preferred time, treatment, and therapist. For spa packages and couples treatments, please book 48–72 hours ahead." },
-      { q: "What is your cancellation policy?", a: "We kindly request 24 hours notice for cancellations or rescheduling. Cancellations with less than 24 hours notice may incur a 50% charge. No-shows are charged in full. We understand emergencies — please call us as early as possible if your plans change." },
-      { q: "Can I book a spa treatment for a group or hen party?", a: "Absolutely! We accommodate groups for corporate wellness events, hen parties, birthday celebrations, and team building. Please call us to discuss your group size and requirements. We can arrange special group rates for parties of 5 or more." },
-      { q: "Are gift vouchers available for spa treatments?", a: "Yes! Gift vouchers are available for any treatment, package, or monetary amount. We offer beautifully presented digital or physical gift cards, valid for 6 months. Perfect for birthdays, anniversaries, and special occasions. Call or WhatsApp to arrange." },
-      { q: "Do you offer membership or loyalty programs?", a: "We offer a loyalty program for regular clients. Ask our reception about our stamp card program and referral rewards when you visit. Regular clients also receive priority booking access and first notification of special promotions." },
+      { q: "How much does car key copying cost in Oman?", a: "Car key copying starts from OMR 2–5 depending on the key type (standard metal, transponder, flip key). We cut keys while you wait — usually in 10–20 minutes. Call +968 9097 4040 to confirm the price for your specific key." },
+      { q: "How much does building key copying cost?", a: "Building and house key copying starts from OMR 0.5–2 depending on the key profile (standard, security, high-security). Most standard keys are cut in 5–10 minutes. Bring the original key to our Seeb shop." },
+      { q: "What types of keys can you duplicate?", a: "We duplicate virtually all standard and security key types: standard door keys, cylinder keys, deadbolt keys, padlock keys, car keys (standard metal blade), and most residential and commercial security key profiles. High-security keys (Mul-T-Lock, Abloy) are also available — call to confirm." },
+      { q: "Can you cut a car key without the original?", a: "For cutting a standard car key blank by code, we may be able to in some cases. However, for chipped (transponder) keys, you typically need the original for copying, or we can use OBD programming to pair a new key. Call us to discuss your specific situation." },
+      { q: "Do you make keys while I wait?", a: "Yes. Key cutting is done on-site while you wait. Standard key duplication takes 5–20 minutes. Key programming takes 30–90 minutes depending on the vehicle." },
     ],
   },
   {
-    name: "Treatments & Services",
+    name: "Car Key Programming",
     faqs: [
-      { q: "Which treatment is best for lower back pain?", a: "For lower back pain, we recommend Deep Tissue Massage as the primary treatment — it targets the deep muscle layers where chronic tension accumulates. Hot Stone Massage is excellent for heat-related muscle relaxation. Foot Reflexology can also help by stimulating the lumbar reflex zones. Our therapists will conduct a health assessment before your session to make the most appropriate recommendation." },
-      { q: "How long do treatments take?", a: "Treatment duration varies: Foot Reflexology (45–60 min), Body Scrub (45–60 min), Facial Treatments (45–90 min), Body Massage (60–120 min), Moroccan Bath (60–90 min), Aromatherapy Massage (60–90 min), Deep Tissue Massage (60–90 min), Hot Stone Massage (75–90 min), Massage Spa Experience (90–120 min). Add 15 minutes for consultation." },
-      { q: "Can I combine multiple treatments in one visit?", a: "Yes! Many treatments complement each other beautifully. Popular combinations: Moroccan Bath + Massage (the bath primes your skin for maximum oil absorption), Body Scrub + Facial, Foot Reflexology + Aromatherapy Massage. We can help you design a custom session schedule. Note that our packages (Royal Retreat, Couples Bliss, VIP Gold) already incorporate the best treatment combinations." },
-      { q: "What products do you use?", a: "We use certified organic, premium products sourced from Morocco (traditional beldi black soap, ghassoul clay, argan oil), Europe (essential oil blends, botanical serums), and Asia (reflexology oils, herbal preparations). All products are paraben-free, sulfate-free, and cruelty-free. We can provide full ingredient lists on request." },
-      { q: "Can I request a male or female therapist?", a: "Yes. We have both male and female therapists on our team. Please specify your preference when booking. We always aim to accommodate preferences, though availability may vary by time slot. Female clients are always paired with female therapists by default unless you specifically request otherwise." },
-      { q: "What if I need to ask my therapist to adjust the pressure during treatment?", a: "Please communicate freely during your treatment! Our therapists actively encourage this. Simply say 'a little firmer please' or 'could you go a bit lighter?' at any point. Ongoing communication between client and therapist is the key to a perfect treatment outcome. Never suffer in silence." },
-      { q: "Can massage help with my chronic stress and anxiety?", a: "Yes — this is one of the best-evidenced benefits of therapeutic massage. Studies published in the Journal of Alternative and Complementary Medicine demonstrate that a single 45-minute massage reduces cortisol (stress hormone) levels by an average of 31% and increases serotonin levels. Regular monthly treatments show cumulative benefits including improved sleep, reduced anxiety scores, and better emotional regulation." },
-      { q: "Are there any conditions that prevent me from receiving a massage?", a: "Most people can safely receive massage therapy. However, we advise against treatment during fever, active skin infections, certain blood clotting disorders, immediately after surgery, or if you have certain cardiovascular conditions. During your pre-treatment consultation, we will review your health questionnaire and identify any modifications needed. When in doubt, consult your doctor before booking." },
+      { q: "How much does car key programming cost in Oman?", a: "Car key programming costs OMR 15–50 depending on the vehicle make and model, and whether a new key blank is required. We provide a quote before starting — no hidden fees. Call +968 9097 4040 with your car make/model for an estimate." },
+      { q: "Which car brands can you program?", a: "We program keys for all major brands available in Oman: Toyota, Nissan, Honda, Mitsubishi, Hyundai, Kia, Land Rover, GMC, Chevrolet, BMW, Mercedes-Benz, and more. Call us to confirm coverage for your specific model and year." },
+      { q: "What is car key programming and why is it needed?", a: "Modern vehicles have an immobiliser system that requires the key's electronic chip to be matched to the car's ECU before the engine will start. Programming pairs a new key's transponder chip to your vehicle. Without programming, a new key will turn in the lock but the engine won't start." },
+      { q: "How long does key programming take?", a: "Car key programming typically takes 30–60 minutes. Some vehicles require more time for complex OBD procedures. We recommend calling ahead so we can confirm the time for your specific vehicle." },
+      { q: "Is your key programming quality as good as the dealership?", a: "Yes. We use OEM-grade diagnostic equipment — the same quality of tools used by dealerships — at a significantly lower cost. The programmed key is functionally identical to a dealer-issued key." },
     ],
   },
   {
-    name: "Location & Facilities",
+    name: "Key Fob Creation",
     faqs: [
-      { q: "Where exactly is Diamond Key Spa located?", a: "We are located at Al Qusais Industrial Area 5, Dubai, United Arab Emirates. Our Plus Code is 7CR3+MXV. We are 5 minutes walk from Al Qusais Metro Station (Green Line), 15 minutes from Dubai International Airport, and 10 minutes from Deira City Centre." },
-      { q: "Is parking available?", a: "Yes — free on-site parking is available for all clients. There is ample space in the industrial area car park immediately adjacent to our premises. No parking stress!" },
-      { q: "Which metro station is closest to Diamond Key Spa?", a: "Al Qusais Metro Station on the Green Line is the closest, approximately 5 minutes walk from our spa. Al Nahda Metro Station is also nearby (8–10 minutes walk). From either station, you can also take a short taxi or rideshare to our door." },
-      { q: "Is Diamond Key Spa accessible for people with disabilities?", a: "We are committed to accessibility. Our ground-floor reception and treatment rooms are wheelchair accessible. Please call ahead if you have specific access requirements so we can prepare appropriately and assist upon your arrival." },
-      { q: "Are treatment rooms private?", a: "Yes. Every treatment at Diamond Key Spa is conducted in a dedicated private room. Couples treatments have a private suite. The Moroccan Hammam has a private steam and treatment area. We never conduct treatments in shared or open spaces." },
+      { q: "How much does a new key fob cost compared to the dealer?", a: "Our key fob creation service costs OMR 20–60 depending on the vehicle — typically 70–80% less than dealership prices. Call +968 9097 4040 with your car make, model, and year for a specific quote." },
+      { q: "Can you create a key fob if I have lost all my keys?", a: "In many cases yes, though the process is more complex. We may need to use specialized OBD equipment and a full key-learning procedure. This takes longer and costs more than adding a key when you have the original. Call us to discuss your specific situation." },
+      { q: "Does the new fob include the key blade?", a: "Yes. Our key fob creation service includes both the electronic fob shell and the cut mechanical key blade (where applicable). Central locking, boot release, and all remote functions are programmed." },
     ],
   },
   {
-    name: "Pricing & Payment",
+    name: "Lock Rekeying",
     faqs: [
-      { q: "What is the price range for treatments at Diamond Key Spa?", a: "Our treatments range from AED 130 (Foot Reflexology, 45 min) to AED 450 (Massage Spa Experience, 120 min). Spa packages range from AED 750 (Royal Retreat) to AED 1,200 (VIP Gold Experience). Full pricing is available on each service page or by calling us." },
-      { q: "What payment methods do you accept?", a: "We accept cash (AED), major credit cards (Visa, Mastercard), debit cards, and bank transfer. Payment is due at the time of service. For packages and gift vouchers purchased in advance, we accept online transfer details provided at booking." },
-      { q: "Do I need to pay a deposit?", a: "For standard individual treatments, no deposit is required. For spa packages (especially Couples and VIP), we may request a 50% deposit to secure your booking, particularly for weekend and evening slots. The deposit is fully refundable with 24 hours notice." },
-      { q: "Do you offer discounts for groups or regulars?", a: "We offer group discounts for parties of 5 or more — please call to discuss rates. Regular clients benefit from our loyalty stamp card (10 visits earns a complimentary treatment). Refer a friend and both of you receive a discount on your next visit." },
+      { q: "What is lock rekeying and why do it?", a: "Rekeying changes the internal pin configuration of your existing lock so that all old keys no longer work — only new keys will. The lock hardware stays in place. It is the recommended action when you move into a new property, after an employee leaves with a key, or after a key is lost." },
+      { q: "How much does lock rekeying cost?", a: "Lock rekeying costs OMR 10–25 per lock depending on the lock brand and type. Multiple locks can often be rekeyed in one visit. Call us to confirm pricing for your specific locks." },
+      { q: "Can multiple locks be rekeyed to work on one key?", a: "Yes — if your locks are compatible, we can rekey them all to the same key code. This is ideal for home and office use where you want one key for all doors." },
     ],
   },
   {
-    name: "Health & Safety",
+    name: "Lockout Services",
     faqs: [
-      { q: "What hygiene standards does Diamond Key Spa maintain?", a: "We maintain hospital-grade hygiene standards throughout our spa. All treatment beds are covered with fresh linen for every client. Towels are laundered after each use at high temperatures. Kessa gloves and disposable items are single-use only. Hard surfaces and equipment are disinfected between clients. Our therapists wash and sanitize hands before every treatment." },
-      { q: "Can I get a massage if I am pregnant?", a: "Prenatal massage is available and beneficial during pregnancy, but with important precautions. We do not perform massage during the first trimester. From the second trimester onwards, our therapists use pregnancy-safe techniques and positioning. Please inform us of your pregnancy when booking and consult your OB/GYN beforehand if you have any complications." },
-      { q: "I have a medical condition — can I still visit?", a: "Most medical conditions do not prevent spa visits with appropriate modifications. Common conditions we regularly accommodate include diabetes, hypertension, fibromyalgia, arthritis, and cancer (in remission). Our pre-treatment health questionnaire identifies any areas requiring modification. For serious conditions, we recommend medical clearance from your doctor before booking." },
-      { q: "Is there an age requirement for spa treatments?", a: "Clients must be 18 years or older to receive spa treatments at Diamond Key Spa without parental consent. Minors aged 16–17 may receive certain treatments (body massage, reflexology) with a parent or guardian present and written consent. We do not offer treatments to children under 16." },
-      { q: "I have sensitive skin or allergies — is that okay?", a: "Absolutely. Please disclose any known allergies or sensitivities when booking and again during your consultation. We will review the products intended for use and substitute hypoallergenic alternatives where needed. We stock fragrance-free, nut-free, and latex-free alternatives for most treatments." },
-      { q: "What COVID-19 precautions do you maintain?", a: "We continue to maintain enhanced hygiene protocols established during the pandemic as permanent standards. This includes thorough sanitization of all surfaces between clients, enhanced ventilation in treatment rooms, regular testing of therapists, and availability of hand sanitizer throughout the spa." },
+      { q: "I am locked out of my car. What should I do?", a: "Call us immediately on +968 9097 4040. Do not break a window. Our technicians use professional wedge and long-reach tools to open your car door without any damage to the paint, glass, or weatherstrips. Car lockout service costs OMR 15–30." },
+      { q: "I am locked out of my home or office. Can you help?", a: "Yes. Call us on +968 9097 4040. We use professional non-destructive picking techniques to open most standard residential and commercial locks without damaging the lock or door frame. Building lockout service costs OMR 10–20." },
+      { q: "What proof of ownership do you need for lockout service?", a: "For building lockouts, we require valid ID and ideally proof of residence or ownership (national ID, passport, tenancy contract, utility bill). For car lockouts, vehicle registration is helpful. We verify identity before opening any property." },
+      { q: "Do you offer on-site lockout service or do I need to come to your shop?", a: "Call us on +968 9097 4040 to discuss. During our opening hours (from 4:30 PM), we may be able to attend your location in Seeb and surrounding Muscat areas, or you can bring the vehicle to our shop. Confirm with us based on your situation." },
+    ],
+  },
+  {
+    name: "General",
+    faqs: [
+      { q: "Where is Diamond Key located?", a: "We are on Al Khair Street, Seeb 522, Muscat, Sultanate of Oman. Search 'المفتاح الماسي Diamond Key' or 'Diamond Key Seeb' on Google Maps for directions." },
+      { q: "What are your opening hours?", a: "We open daily from 4:30 PM. Call +968 9097 4040 to confirm we are available before visiting, especially for urgent or complex jobs." },
+      { q: "What payment methods do you accept?", a: "We accept cash (OMR) and other common local payment methods. Call us to confirm current payment options when booking." },
+      { q: "Can you help with both car keys and building locks?", a: "Yes. Diamond Key is a full-service locksmith and key duplication shop. We handle all types of keys and locks — automotive, residential, and commercial." },
     ],
   },
 ];
@@ -95,8 +95,8 @@ export default function FAQPage() {
             Frequently Asked <span className="text-gold-400">Questions</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
-            Everything you need to know about Diamond Key Spa — treatments, booking, location,
-            pricing, and what to expect from your visit.
+            Everything you need to know about Diamond Key&apos;s locksmith and key duplication
+            services in Seeb, Muscat, Oman.
           </p>
         </div>
       </div>
@@ -133,11 +133,11 @@ export default function FAQPage() {
             <SectionLabel>Still Have Questions?</SectionLabel>
             <h2 className="text-3xl font-serif font-bold mb-4">We&apos;re Here to Help</h2>
             <p className="text-gray-600 mb-8">
-              Our team is available daily from 9:00 AM to 12:30 AM. Call, WhatsApp, or email us
-              and we&apos;ll respond promptly.
+              Call or WhatsApp us on +968 9097 4040. We open daily from 4:30 PM from our
+              shop on Al Khair Street, Seeb, Muscat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+971544907283" className="gold-btn">Call: +971 54 490 7283</a>
+              <a href={`tel:${siteConfig.contact.phone}`} className="gold-btn">Call: {siteConfig.contact.phoneDisplay}</a>
               <Link href="/contact" className="ghost-btn">Contact Us</Link>
             </div>
           </AnimatedSection>

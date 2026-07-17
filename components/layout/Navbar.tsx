@@ -8,7 +8,6 @@ import {
   Menu,
   X,
   ChevronDown,
-  Calendar,
   MessageCircle,
   Star,
   MapPin,
@@ -19,11 +18,12 @@ import { navigation } from "@/config/navigation";
 import { generateWhatsAppUrl, cn } from "@/lib/utils";
 
 const LOGO_SVG = (
-  <svg viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-auto">
+  <svg viewBox="0 0 220 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-auto">
     <path d="M8 25 L18 10 L28 25 L18 40 Z" fill="#C89B3C" opacity="0.9" />
     <path d="M13 25 L18 16 L23 25 L18 34 Z" fill="#f9f0d5" />
-    <text x="36" y="22" fontFamily="Georgia, serif" fontSize="14" fontWeight="700" fill="#1A1A1A" letterSpacing="1">DIAMOND KEY</text>
-    <text x="36" y="38" fontFamily="Georgia, serif" fontSize="9" fontWeight="400" fill="#C89B3C" letterSpacing="3">SPA · DUBAI</text>
+    <text x="36" y="20" fontFamily="Georgia, serif" fontSize="14" fontWeight="700" fill="#1A1A1A" letterSpacing="1">DIAMOND KEY</text>
+    <text x="36" y="33" fontFamily="Georgia, serif" fontSize="8" fontWeight="400" fill="#C89B3C" letterSpacing="2">المفتاح الماسي</text>
+    <text x="36" y="44" fontFamily="Georgia, serif" fontSize="7.5" fontWeight="400" fill="#888" letterSpacing="2.5">SEEB · OMAN</text>
   </svg>
 );
 
@@ -77,17 +77,17 @@ export default function Navbar() {
           <div className="flex items-center gap-6 text-gray-400">
             <span className="flex items-center gap-1.5">
               <MapPin className="w-3 h-3 text-gold-400" />
-              Al Qusais Industrial Area 5, Dubai, UAE
+              Al Khair St, Seeb 522, Muscat, Oman
             </span>
             <span className="flex items-center gap-1.5">
               <Clock className="w-3 h-3 text-gold-400" />
-              Open Daily · Closes 12:30 AM
+              Opens Daily 4:30 PM
             </span>
           </div>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1 text-gold-400">
               <Star className="w-3 h-3 fill-gold-400" />
-              <span className="font-semibold">4.76</span>
+              <span className="font-semibold">4.0</span>
               <span className="text-gray-500">Google Rating</span>
             </span>
             <a
@@ -210,13 +210,13 @@ export default function Navbar() {
                 <span className="hidden lg:inline">WhatsApp</span>
               </a>
 
-              <Link
-                href="/book-appointment"
+              <a
+                href={`tel:${siteConfig.contact.phone}`}
                 className="gold-btn !py-2.5 !px-5 text-sm hidden md:flex items-center gap-2"
               >
-                <Calendar className="w-4 h-4" />
-                Book Now
-              </Link>
+                <Phone className="w-4 h-4" />
+                Call Now
+              </a>
 
               <button
                 className="lg:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors"
@@ -248,14 +248,16 @@ export default function Navbar() {
                     <Phone className="w-4 h-4" />
                     Call Now
                   </a>
-                  <Link
-                    href="/book-appointment"
+                  <a
+                    href={generateWhatsAppUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setMobileOpen(false)}
                     className="flex-1 gold-btn !py-3 !px-4 !rounded-xl text-sm text-center flex items-center justify-center gap-2"
                   >
-                    <Calendar className="w-4 h-4" />
-                    Book Now
-                  </Link>
+                    <MessageCircle className="w-4 h-4" />
+                    WhatsApp
+                  </a>
                 </div>
 
                 {navigation.main.map((item) => (
@@ -269,11 +271,11 @@ export default function Navbar() {
                 <div className="pt-4 border-t border-gray-100 space-y-2 text-sm text-gray-500">
                   <p className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-gold-400" />
-                    Al Qusais Industrial Area 5, Dubai
+                    Al Khair St, Seeb 522, Muscat, Oman
                   </p>
                   <p className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-gold-400" />
-                    Open Daily · Closes 12:30 AM
+                    Opens Daily 4:30 PM
                   </p>
                 </div>
               </div>

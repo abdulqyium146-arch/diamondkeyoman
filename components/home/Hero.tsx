@@ -3,29 +3,30 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Calendar, Phone, Star, MapPin, ChevronDown } from "lucide-react";
+import { Phone, Star, MapPin, ChevronDown, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { generateWhatsAppUrl } from "@/lib/utils";
 
 const slides = [
   {
-    headline: "Discover True Luxury",
-    subheadline: "at Diamond Key Spa",
-    tagline: "Dubai's Premier Day Spa Experience",
-    cta: "Book Your Escape",
+    headline: "Expert Key Duplication",
+    subheadline: "& Locksmith Services",
+    tagline: "Seeb · Muscat · Oman — المفتاح الماسي",
+    cta: "Call Us Now",
     bg: "from-[#0a0a0a] via-[#1a1208] to-[#0a0a0a]",
   },
   {
-    headline: "Authentic Moroccan",
-    subheadline: "Hammam Ritual",
-    tagline: "Ancient Traditions · Modern Luxury · Al Qusais, Dubai",
-    cta: "Explore Hammam",
+    headline: "Car Key Programming",
+    subheadline: "All Brands Covered",
+    tagline: "Digital Keys · Remote Fobs · Immobiliser Programming",
+    cta: "WhatsApp Us",
     bg: "from-[#0d0a06] via-[#1a1108] to-[#0d0a06]",
   },
   {
-    headline: "Therapeutic Massage",
-    subheadline: "by Expert Therapists",
-    tagline: "Body · Mind · Soul · Renewal",
-    cta: "View Services",
+    headline: "Emergency Lockout?",
+    subheadline: "We Open Any Lock",
+    tagline: "Fast Response · No Damage · Cars & Buildings",
+    cta: "Get Help Now",
     bg: "from-[#06090d] via-[#0a1018] to-[#06090d]",
   },
 ];
@@ -44,10 +45,15 @@ export default function Hero() {
 
   const slide = slides[currentSlide];
 
+  const ctaHref =
+    currentSlide === 0
+      ? `tel:${siteConfig.contact.phone}`
+      : generateWhatsAppUrl();
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      aria-label="Diamond Key Spa — Luxury Day Spa in Dubai"
+      aria-label="Diamond Key — Key Duplication & Locksmith in Seeb, Oman"
     >
       <motion.div
         key={currentSlide}
@@ -80,17 +86,17 @@ export default function Hero() {
           className="flex items-center justify-center gap-3 mb-8"
         >
           <div className="flex items-center gap-1">
-            {[...Array(5)].map((_, i) => (
+            {[...Array(4)].map((_, i) => (
               <Star key={i} className="w-4 h-4 fill-gold-400 text-gold-400" />
             ))}
           </div>
           <span className="text-gold-300 font-semibold text-sm">
-            {siteConfig.rating.value} Google Rating
+            {siteConfig.rating.value} Google Rating · {siteConfig.rating.count} Reviews
           </span>
           <span className="text-white/40">·</span>
           <span className="text-white/60 text-sm flex items-center gap-1">
             <MapPin className="w-3.5 h-3.5 text-gold-400" />
-            Al Qusais, Dubai
+            Seeb, Muscat
           </span>
         </motion.div>
 
@@ -128,8 +134,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed font-light"
         >
-          Surrender to the art of luxury wellness. Expert therapists, premium organic products,
-          and an atmosphere of pure tranquility await you in the heart of Dubai.
+          Trusted for 7+ years in Seeb, Muscat. Car key duplication, digital key
+          programming, remote fob creation, lock rekeying, and emergency lockout
+          service — all under one roof.
         </motion.p>
 
         <motion.div
@@ -138,21 +145,26 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Link
-            href="/book-appointment"
+          <a
+            href={ctaHref}
+            target={currentSlide !== 0 ? "_blank" : undefined}
+            rel={currentSlide !== 0 ? "noopener noreferrer" : undefined}
             className="gold-btn flex items-center gap-2 text-base"
           >
-            <Calendar className="w-5 h-5" />
+            {currentSlide === 0 ? (
+              <Phone className="w-5 h-5" />
+            ) : (
+              <MessageCircle className="w-5 h-5" />
+            )}
             {slide.cta}
-          </Link>
+          </a>
 
-          <a
-            href={`tel:${siteConfig.contact.phone}`}
+          <Link
+            href="/services"
             className="ghost-btn flex items-center gap-2 text-base border-white/30 text-white hover:bg-white/10 hover:border-white/50"
           >
-            <Phone className="w-5 h-5" />
-            Call: {siteConfig.contact.phoneDisplay}
-          </a>
+            View All Services
+          </Link>
         </motion.div>
 
         <motion.div
@@ -162,9 +174,9 @@ export default function Hero() {
           className="mt-16 grid grid-cols-3 gap-6 max-w-lg mx-auto"
         >
           {[
-            { value: "10+", label: "Years Experience" },
-            { value: "5000+", label: "Happy Clients" },
-            { value: "9+", label: "Expert Services" },
+            { value: "7+", label: "Years in Business" },
+            { value: "51+", label: "Happy Customers" },
+            { value: "7", label: "Expert Services" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-2xl sm:text-3xl font-serif font-bold text-gold-300">

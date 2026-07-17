@@ -4,8 +4,8 @@ import { siteConfig } from "@/config/site";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.name,
-    short_name: "Diamond Key Spa",
-    description: siteConfig.shortDescription,
+    short_name: "Diamond Key",
+    description: "Key duplication and locksmith services in Seeb, Muscat, Oman.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
@@ -14,7 +14,7 @@ export default function manifest(): MetadataRoute.Manifest {
     scope: "/",
     lang: "en",
     dir: "ltr",
-    categories: ["health", "beauty", "lifestyle"],
+    categories: ["automotive", "home-improvement", "utilities"],
     icons: [
       {
         src: "/icons/icon-72x72.png",
@@ -67,25 +67,25 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     shortcuts: [
       {
-        name: "Book Appointment",
-        short_name: "Book",
-        description: "Book a spa appointment",
-        url: "/book-appointment",
-        icons: [{ src: "/icons/book-icon.png", sizes: "192x192" }],
-      },
-      {
         name: "Call Us",
         short_name: "Call",
-        description: "Call Diamond Key Spa",
-        url: "tel:+971544907283",
+        description: "Call Diamond Key Oman",
+        url: "tel:+96890974040",
         icons: [{ src: "/icons/call-icon.png", sizes: "192x192" }],
       },
       {
         name: "Services",
         short_name: "Services",
-        description: "Browse our spa services",
+        description: "Browse our locksmith services",
         url: "/services",
         icons: [{ src: "/icons/services-icon.png", sizes: "192x192" }],
+      },
+      {
+        name: "Contact",
+        short_name: "Contact",
+        description: "Contact Diamond Key",
+        url: "/contact",
+        icons: [{ src: "/icons/book-icon.png", sizes: "192x192" }],
       },
     ],
     screenshots: [

@@ -1,20 +1,20 @@
-import { MapPin, Phone, Clock, Navigation, Train, Car, ExternalLink } from "lucide-react";
+import { MapPin, Phone, Clock, Navigation, Car, ExternalLink } from "lucide-react";
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
 import { siteConfig } from "@/config/site";
 
 const nearbyInfo = [
-  { icon: Train, label: "Nearest Metro", value: "Al Qusais Metro (Green Line) — 5 min walk" },
-  { icon: Car, label: "From Dubai Airport", value: "Dubai Intl Airport — 15 min drive" },
-  { icon: Navigation, label: "From Downtown", value: "Downtown Dubai — 20 min drive" },
-  { icon: Navigation, label: "From Deira", value: "Deira City Centre — 10 min drive" },
+  { icon: Car, label: "From Airport", value: "Muscat Intl Airport — 10 min drive" },
+  { icon: Car, label: "From Bausher", value: "Bausher — 5 min drive" },
+  { icon: Navigation, label: "From Mawaleh", value: "Mawaleh — 8 min drive" },
+  { icon: Navigation, label: "From Al Khuwair", value: "Al Khuwair — 12 min drive" },
 ];
 
 export default function LocationSection() {
   return (
     <section
       className="section-padding bg-gray-50"
-      aria-label="Diamond Key Spa location in Al Qusais Dubai"
+      aria-label="Diamond Key locksmith location in Seeb Muscat Oman"
       id="location"
     >
       <div className="container-custom">
@@ -22,11 +22,11 @@ export default function LocationSection() {
           <SectionLabel>Find Us</SectionLabel>
           <h2 className="section-heading">
             Conveniently Located in
-            <span className="block text-gold-500">Al Qusais, Dubai</span>
+            <span className="block text-gold-500">Seeb, Muscat, Oman</span>
           </h2>
           <p className="section-subheading mt-4">
-            Easily accessible from across Dubai — just minutes from Al Qusais Metro station,
-            Dubai International Airport, and major highways. Free parking available.
+            Our shop is on Al Khair Street in Seeb — easily accessible from across Muscat
+            Governorate including Bausher, Mawaleh, Al Khuwair, and Muscat International Airport.
           </p>
         </AnimatedSection>
 
@@ -34,14 +34,14 @@ export default function LocationSection() {
           <AnimatedSection direction="right">
             <div className="rounded-2xl overflow-hidden shadow-luxury h-80 lg:h-96 bg-gray-200 relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.!2d55.3708!3d25.2648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zRGlhbW9uZCBLZXkgU3Bh!5e0!3m2!1sen!2sae!4v1234567890"
+                src={siteConfig.location.googleMapsEmbed}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Diamond Key Spa location on Google Maps"
+                title="Diamond Key locksmith location in Seeb Oman on Google Maps"
                 className="grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
@@ -66,9 +66,9 @@ export default function LocationSection() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Our Address</h3>
                     <address className="not-italic text-gray-600 text-sm leading-relaxed">
-                      Al Qusais Industrial Area 5<br />
-                      Dubai, United Arab Emirates<br />
-                      <span className="text-gray-400 text-xs">Plus Code: 7CR3+MXV</span>
+                      Al Khair Street<br />
+                      Seeb 522, Muscat<br />
+                      Sultanate of Oman
                     </address>
                   </div>
                 </div>
@@ -83,12 +83,12 @@ export default function LocationSection() {
                     <h3 className="font-semibold text-gray-900 mb-2">Opening Hours</h3>
                     <div className="space-y-1 text-sm">
                       <div className="flex justify-between">
-                        <span className="text-gray-600">Monday – Thursday</span>
-                        <span className="font-medium text-gray-800">9:00 AM – 12:30 AM</span>
+                        <span className="text-gray-600">Saturday – Wednesday</span>
+                        <span className="font-medium text-gray-800">4:30 PM – 11:00 PM</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-gray-600">Friday – Sunday</span>
-                        <span className="font-medium text-gray-800">9:00 AM – 12:30 AM</span>
+                        <span className="text-gray-600">Thursday – Friday</span>
+                        <span className="font-medium text-gray-800">4:30 PM – 11:30 PM</span>
                       </div>
                       <div className="mt-2 pt-2 border-t border-gray-100">
                         <span className="text-xs text-green-600 font-semibold">

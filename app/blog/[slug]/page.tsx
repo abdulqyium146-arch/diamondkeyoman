@@ -93,7 +93,7 @@ export default async function BlogPostPage({
             <span className="flex items-center gap-2"><User className="w-4 h-4" />{post.author}</span>
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              {new Date(post.publishedAt).toLocaleDateString("en-AE", { year: "numeric", month: "long", day: "numeric" })}
+              {new Date(post.publishedAt).toLocaleDateString("en-OM", { year: "numeric", month: "long", day: "numeric" })}
             </span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" />{post.readTime} min read</span>
           </div>
@@ -111,45 +111,45 @@ export default async function BlogPostPage({
 
                 <div className="prose prose-lg prose-gray max-w-none">
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    At Diamond Key Spa in Al Qusais, Dubai, our certified therapists encounter clients every day seeking answers to the questions this article addresses. Drawing on our collective experience serving thousands of Dubai residents, this comprehensive guide provides expert-level insight based on real clinical practice and the latest wellness research.
+                    At Diamond Key in Seeb, Muscat, our technicians work with customers every day who encounter the situations this article addresses. Drawing on our experience serving Oman&apos;s drivers and property owners for over 7 years, this guide provides practical, expert-level information based on real hands-on experience with keys and locks in Oman.
                   </p>
 
                   <h2 className="text-2xl font-serif font-bold text-gray-900 mt-10 mb-4">
-                    Understanding the Foundation
+                    Understanding the Basics
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    The topic of {post.title.split(":")[0].toLowerCase()} is one that deserves careful, evidence-based exploration. Whether you are a first-time spa visitor curious about what to expect, or a regular wellness seeker looking to deepen your understanding, the principles covered here apply directly to your health journey in Dubai&apos;s unique climate and lifestyle context.
+                    The topic of {post.title.split(":")[0].toLowerCase()} is one that affects many Oman residents at some point. Whether you are dealing with a lost car key, need a spare key cut, or want to understand how modern car key programming works, the information here applies directly to the situations Muscat residents face.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    Dubai&apos;s fast-paced, high-achieving environment creates specific wellness challenges that many residents share — chronic stress, sedentary work patterns, air conditioning-induced muscle tension, dehydration from the heat, and the psychological burden of living far from family and support networks. Understanding how professional spa treatments address these challenges is the first step toward building a sustainable wellness routine.
+                    Oman&apos;s car-dependent lifestyle means that key and locksmith issues have an immediate impact on daily life. Understanding your options — and knowing when to call a professional — can save significant time and money compared to going directly to an expensive dealership.
                   </p>
 
                   <h2 className="text-2xl font-serif font-bold text-gray-900 mt-10 mb-4">
-                    The Science and Evidence
+                    What You Need to Know
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Modern wellness science has moved far beyond the notion that spa treatments are merely indulgent luxuries. Research published in leading journals including Pain Medicine, the Journal of Alternative and Complementary Medicine, and the International Journal of Neuroscience consistently demonstrates measurable physiological and psychological benefits from professional therapeutic treatments.
+                    Modern vehicles and security systems have become increasingly sophisticated. Car keys now contain electronic transponder chips that must be programmed to the vehicle&apos;s immobiliser system. Building locks have evolved from simple pin tumbler designs to high-security cylinders. Understanding these systems helps you make informed decisions when you need key or locksmith services.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Specifically relevant to the topic of {post.tags[0] || "spa therapy"}, peer-reviewed studies have demonstrated statistically significant improvements in cortisol levels (the primary stress hormone), natural killer cell count (immunity), sleep quality metrics, and self-reported pain scores. These are not anecdotal — they are reproducible, documented results from controlled clinical trials.
+                    Specifically relevant to {post.tags[0] || "key services"}, the key principles our technicians want Oman residents to understand include the difference between mechanical key cutting and electronic key programming, when rekeying is better than replacing a lock, and what to do — and not do — in a lockout situation.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    At Diamond Key Spa, every treatment protocol has been developed in consultation with our wellness experts and is underpinned by this body of evidence. We do not offer treatments that lack scientific rationale — every technique, product, and sequence has been chosen because it produces measurable results for our clients.
+                    At Diamond Key, every service we provide uses professional-grade tools and genuine OEM-compatible parts. We do not use improvised methods or low-quality key blanks — the result is a key or repair that works correctly and reliably from day one.
                   </p>
 
                   <h2 className="text-2xl font-serif font-bold text-gray-900 mt-10 mb-4">
-                    Practical Application for Dubai Residents
+                    Practical Tips for Oman Residents
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Understanding the theory is important, but practical application is what transforms knowledge into wellbeing. Here are the key principles our therapists want every Dubai resident to understand and act upon:
+                    Here are the key points our technicians recommend every Muscat resident knows:
                   </p>
                   <ul className="list-none space-y-3 mb-6">
                     {[
-                      "Consistency matters more than frequency — a monthly session delivers better long-term results than three sessions in one month followed by months of inactivity",
-                      "Communication with your therapist before and during treatment is the most powerful tool for maximising your results",
-                      "Aftercare — particularly hydration, rest, and avoiding alcohol — significantly extends the benefits of any treatment",
-                      "Combining complementary treatments (for example, Moroccan Bath before a massage) creates compounding benefits neither delivers alone",
-                      "Building a relationship with a single therapist who knows your body and health history over time delivers superior outcomes",
+                      "Always have at least one spare key for your home and car — a duplicate cut today costs far less than an emergency lockout service",
+                      "Never try to force a key that doesn't turn smoothly — it may be worn or incorrectly cut, and forcing it can damage the lock",
+                      "If you lose a key to your home or office, rekey the locks rather than replace them — it's cheaper and equally secure",
+                      "For car key issues, call a professional locksmith before going to the dealer — you will typically save 70–80% on key programming",
+                      "Keep our number saved: +968 9097 4040 — for any key or locksmith issue in Seeb or Muscat",
                     ].map((tip, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="w-6 h-6 rounded-full bg-gold-100 text-gold-600 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">{i + 1}</span>
@@ -159,27 +159,27 @@ export default async function BlogPostPage({
                   </ul>
 
                   <h2 className="text-2xl font-serif font-bold text-gray-900 mt-10 mb-4">
-                    What Our Therapists Recommend
+                    When to Call Diamond Key
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Based on years of working with Dubai&apos;s diverse population — from Emirati nationals to expats from every continent, from young professionals to retirees — our therapists have developed clear recommendations for building a wellness routine that works within the realities of life in the UAE.
+                    Based on 7+ years of serving Seeb and Muscat customers, the most common situations we handle are: needing a spare car key, programming a replacement key fob, being locked out of a car or home, and rekeying locks after moving to a new property.
                   </p>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    The most common mistake we see is treating spa visits as reactive rather than proactive — waiting until stress or pain becomes overwhelming before booking a session. The clients who achieve the best long-term outcomes are those who treat regular spa therapy as preventive medicine: a monthly investment in their health that prevents the accumulation of tension, stress, and skin damage that eventually requires emergency intervention.
+                    In all these situations, the right first step is to call us on +968 9097 4040 and describe the situation. We can advise the correct service, confirm the price, and arrange for you to visit our Seeb shop or discuss on-site service.
                   </p>
 
                   <div className="bg-gold-50 border border-gold-100 rounded-2xl p-6 my-8">
-                    <h3 className="font-bold text-gray-900 mb-3">Expert Summary</h3>
+                    <h3 className="font-bold text-gray-900 mb-3">Key Takeaway</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      {post.excerpt} At Diamond Key Spa, we combine this expertise with premium organic products, state-of-the-art facilities, and deeply personalized care to ensure every visit delivers maximum benefit for your specific health profile and goals.
+                      {post.excerpt} At Diamond Key, we combine technical expertise with honest pricing to give Oman residents the most cost-effective key and locksmith service in Seeb and Muscat.
                     </p>
                   </div>
 
                   <h2 className="text-2xl font-serif font-bold text-gray-900 mt-10 mb-4">
-                    Ready to Experience It?
+                    Need Help with a Key or Lock?
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-6">
-                    Knowledge is only the first step. The real transformation happens when you experience the treatment firsthand with a skilled therapist who can apply these principles specifically to your body. Diamond Key Spa is located in Al Qusais Industrial Area 5, Dubai — just 5 minutes walk from Al Qusais Metro Station, 15 minutes from Dubai International Airport, and open daily from 9:00 AM to 12:30 AM.
+                    Diamond Key is on Al Khair Street, Seeb 522, Muscat, Oman. Open daily from 4:30 PM. Call or WhatsApp +968 9097 4040 for immediate assistance with any key or locksmith need across Muscat.
                   </p>
                 </div>
 
@@ -192,7 +192,7 @@ export default async function BlogPostPage({
                       <h3 className="font-bold text-gray-900">{post.author}</h3>
                       <p className="text-sm text-gold-500">{post.authorTitle}</p>
                       <p className="text-sm text-gray-500 mt-2 leading-relaxed">
-                        A certified wellness professional with years of experience at Diamond Key Spa, specializing in therapeutic treatments and client education.
+                        A key and locksmith expert with years of experience at Diamond Key, specializing in car key programming, lock rekeying, and emergency locksmith services in Oman.
                       </p>
                     </div>
                   </div>
@@ -217,14 +217,13 @@ export default async function BlogPostPage({
             <aside className="space-y-5">
               <div className="sticky top-28 space-y-5">
                 <div className="luxury-card p-6">
-                  <h3 className="font-bold text-gray-900 mb-4">Book a Treatment</h3>
+                  <h3 className="font-bold text-gray-900 mb-4">Need a Key or Locksmith?</h3>
                   <p className="text-sm text-gray-500 mb-4 leading-relaxed">
-                    Ready to experience the treatments discussed in this article?
-                    Our expert therapists are available daily.
+                    Call or WhatsApp Diamond Key in Seeb, Muscat. Open daily from 4:30 PM.
                   </p>
                   <div className="space-y-3">
-                    <Link href="/book-appointment" className="gold-btn !py-3 block text-center text-sm">Book Now</Link>
-                    <a href="tel:+971544907283" className="ghost-btn !py-3 block text-center text-sm">+971 54 490 7283</a>
+                    <a href={`tel:${siteConfig.contact.phone}`} className="gold-btn !py-3 block text-center text-sm">Call Now</a>
+                    <a href={`https://wa.me/96890974040?text=Hello%20Diamond%20Key!%20I%20need%20help%20with%20a%20key%20or%20lock.`} target="_blank" rel="noopener noreferrer" className="ghost-btn !py-3 block text-center text-sm">WhatsApp Us</a>
                   </div>
                 </div>
 
@@ -254,11 +253,11 @@ export default async function BlogPostPage({
                   <h3 className="font-bold text-gray-900 mb-3 text-sm">Our Services</h3>
                   <ul className="space-y-2">
                     {[
-                      { name: "Body Massage", href: "/services/body-massage" },
-                      { name: "Moroccan Bath", href: "/services/moroccan-bath" },
-                      { name: "Facial Treatments", href: "/services/facial-treatments" },
-                      { name: "Deep Tissue Massage", href: "/services/deep-tissue-massage" },
-                      { name: "Aromatherapy", href: "/services/aromatherapy" },
+                      { name: "Car Key Copying", href: "/services/car-key-copying" },
+                      { name: "Car Key Programming", href: "/services/car-key-programming" },
+                      { name: "Key Fob Creation", href: "/services/key-fob-creation" },
+                      { name: "Lock Rekeying", href: "/services/lock-rekeying" },
+                      { name: "Car Lockout", href: "/services/car-lockout" },
                     ].map((s) => (
                       <li key={s.href}>
                         <Link href={s.href} className="flex items-center gap-2 text-sm text-gray-600 hover:text-gold-500 transition-colors py-1">

@@ -13,29 +13,29 @@ import HomeCTA from "@/components/home/HomeCTA";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Diamond Key Spa Dubai | Luxury Day Spa in Al Qusais — Massage, Moroccan Bath & Facials",
+  title: "Diamond Key | Key Duplication & Locksmith in Seeb, Oman — المفتاح الماسي",
   description:
-    "Experience Dubai's finest luxury day spa at Diamond Key Spa, Al Qusais. Expert massage therapy, authentic Moroccan hammam, advanced facials & exclusive spa packages. ⭐ 4.76 Google Rating. Open daily until 12:30 AM.",
+    "Diamond Key (المفتاح الماسي) — Oman's trusted key duplication and locksmith experts in Seeb, Muscat. Car key copying, programming, key fob creation, lock rekeying & lockout services. 4.0★ Google Rating. From OMR 0.5.",
   keywords: [
-    "diamond key spa",
-    "luxury day spa dubai",
-    "spa al qusais dubai",
-    "best massage dubai",
-    "moroccan bath dubai",
-    "day spa near me dubai",
-    "body massage dubai",
-    "facial treatment dubai",
-    "aromatherapy dubai",
-    "deep tissue massage dubai",
-    "spa packages dubai",
-    "wellness center dubai",
+    "key duplication Seeb",
+    "locksmith Muscat",
+    "car key copying Oman",
+    "car key programming Seeb",
+    "key fob creation Oman",
+    "lock rekeying Muscat",
+    "building lockout Seeb",
+    "car lockout Oman",
+    "diamond key oman",
+    "المفتاح الماسي",
+    "locksmith Seeb",
+    "key cutting Muscat",
   ],
   openGraph: {
-    title: "Diamond Key Spa | Dubai's Premier Luxury Day Spa — Al Qusais",
+    title: "Diamond Key — Key Duplication & Locksmith | Seeb, Muscat, Oman",
     description:
-      "Surrender to luxury at Diamond Key Spa in Al Qusais, Dubai. Authentic Moroccan hammam, expert massage therapy, advanced facials, and exclusive spa packages. ⭐ 4.76/5 Google Rating.",
+      "Oman's trusted key duplication and locksmith service in Seeb, Muscat. Car keys, building keys, key programming, fob creation, rekeying & emergency lockout. 4.0★ Google Rating.",
     url: siteConfig.url,
-    images: [{ url: "/images/og/diamond-key-spa-og.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og/diamond-key-og.jpg", width: 1200, height: 630 }],
   },
   alternates: { canonical: siteConfig.url },
 };

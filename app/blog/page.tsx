@@ -8,17 +8,17 @@ import { blogPosts } from "@/content/blog/posts";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Spa & Wellness Blog | Expert Insights from Diamond Key Spa Dubai",
+  title: "Key & Locksmith Blog | Expert Guides from Diamond Key Oman",
   description:
-    "Explore 50+ expert articles on spa treatments, massage therapy, skincare, wellness, and Dubai spa guides. Written by certified therapists at Diamond Key Spa, Al Qusais.",
+    "Expert articles on car key duplication, key programming, lock rekeying, lockout tips, and locksmith guides for Oman. From Diamond Key, your trusted locksmith in Seeb, Muscat.",
   keywords: [
-    "spa blog dubai", "massage guide dubai", "wellness articles uae", "spa tips dubai",
-    "skincare guide dubai", "hammam guide", "reflexology guide", "aromatherapy guide",
+    "key duplication guide Oman", "car key programming guide", "locksmith tips Muscat",
+    "lock rekeying guide Oman", "key fob guide Seeb", "lockout tips Oman",
   ],
   alternates: { canonical: `${siteConfig.url}/blog` },
 };
 
-const categories = ["All", "Wellness", "Treatments", "Dubai Guide", "Health", "Skincare", "Education", "Holistic", "Experiences", "Luxury", "Sports", "Mental Health"];
+const categories = ["All", "Key Duplication", "Key Programming", "Locksmith", "Emergency", "Car Keys", "Building Keys", "Guide", "Tips", "Oman"];
 
 const categoryColors: Record<string, string> = {
   Wellness: "bg-green-100 text-green-700",
@@ -55,13 +55,13 @@ export default function BlogPage() {
           style={{ backgroundImage: "radial-gradient(circle, rgba(200,155,60,0.4) 1px, transparent 1px)", backgroundSize: "50px 50px" }} />
         <div className="container-custom relative z-10">
           <Breadcrumbs items={breadcrumbs} className="mb-6 text-gray-400 [&_a]:text-gray-400 [&_a:hover]:text-gold-400" />
-          <SectionLabel centered={false}>Wellness Blog</SectionLabel>
+          <SectionLabel centered={false}>Key & Locksmith Blog</SectionLabel>
           <h1 className="text-4xl md:text-6xl font-serif font-bold mt-2 mb-4">
-            Expert Spa &amp; Wellness <span className="text-gold-400">Insights</span>
+            Expert Key & Locksmith <span className="text-gold-400">Guides</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
-            Authoritative articles on spa treatments, massage science, skincare, and wellness
-            — written by certified therapists with years of hands-on experience.
+            Practical guides on car key duplication, key programming, lock rekeying, emergency
+            lockout tips, and everything you need to know about keys and locks in Oman.
           </p>
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function BlogPage() {
                           <Clock className="w-3.5 h-3.5" />
                           <span>{post.readTime} min</span>
                           <span>·</span>
-                          <span>{new Date(post.publishedAt).toLocaleDateString("en-AE", { month: "short", day: "numeric", year: "numeric" })}</span>
+                          <span>{new Date(post.publishedAt).toLocaleDateString("en-OM", { month: "short", day: "numeric", year: "numeric" })}</span>
                         </div>
                         <h2 className="text-base font-serif font-bold text-gray-900 leading-snug mb-2 group-hover:text-gold-600 transition-colors line-clamp-2">
                           {post.title}
@@ -132,7 +132,7 @@ export default function BlogPage() {
         <div className="container-custom">
           <AnimatedSection className="mb-10">
             <h2 className="text-2xl font-serif font-bold">All Articles</h2>
-            <p className="text-gray-500 text-sm mt-1">{blogPosts.length} articles from certified wellness experts</p>
+            <p className="text-gray-500 text-sm mt-1">{blogPosts.length} expert articles on keys and locksmith services</p>
           </AnimatedSection>
           <AnimatedGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" staggerDelay={0.05}>
             {rest.map((post, i) => {
@@ -152,7 +152,7 @@ export default function BlogPage() {
                         <Clock className="w-3 h-3" />
                         <span>{post.readTime} min</span>
                         <span>·</span>
-                        <span>{new Date(post.publishedAt).toLocaleDateString("en-AE", { month: "short", year: "numeric" })}</span>
+                        <span>{new Date(post.publishedAt).toLocaleDateString("en-OM", { month: "short", year: "numeric" })}</span>
                       </div>
                       <h3 className="text-sm font-serif font-bold text-gray-900 leading-snug mb-2 group-hover:text-gold-600 transition-colors line-clamp-2">
                         {post.title}

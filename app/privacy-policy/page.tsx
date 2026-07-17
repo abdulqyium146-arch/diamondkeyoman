@@ -6,9 +6,9 @@ import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Diamond Key Spa Dubai",
+  title: "Privacy Policy | Diamond Key Oman",
   description:
-    "Read Diamond Key Spa's privacy policy. Learn how we collect, use, and protect your personal information in accordance with UAE data protection laws.",
+    "Read Diamond Key's privacy policy. Learn how we collect, use, and protect your personal information in accordance with Oman data protection laws.",
   alternates: { canonical: `${siteConfig.url}/privacy-policy` },
   robots: { index: false },
 };
@@ -40,7 +40,7 @@ const sections = [
   {
     title: "3. How We Share Your Information",
     content: [
-      "Diamond Key Spa does not sell, rent, or trade your personal information to third parties. We may share your information only in the following limited circumstances:",
+      "Diamond Key does not sell, rent, or trade your personal information to third parties. We may share your information only in the following limited circumstances:",
       "**Service Providers:** We may share data with trusted third-party service providers (such as payment processors or booking software providers) who assist us in operating our business. These providers are contractually bound to protect your information and use it only for the purposes we specify.",
       "**Legal Requirements:** We may disclose your information if required to do so by law, court order, or governmental authority in the United Arab Emirates.",
       "**Business Transfer:** In the event of a merger, acquisition, or sale of business assets, client information may be transferred as part of that transaction, subject to equivalent privacy protections.",
@@ -106,7 +106,7 @@ const sections = [
     title: "10. Contact Us",
     content: [
       "If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact us:",
-      `**Diamond Key Spa**\nAl Qusais Industrial Area 5\nDubai, United Arab Emirates`,
+      `**Diamond Key — المفتاح الماسي**\nAl Khair Street, Seeb 522\nMuscat, Sultanate of Oman`,
       `**Phone / WhatsApp:** ${siteConfig.contact.phoneDisplay}`,
       `**Email:** ${siteConfig.contact.email}`,
       "We will respond to all data protection enquiries within 10 business days.",
@@ -140,7 +140,7 @@ export default function PrivacyPolicyPage() {
           <Breadcrumbs items={breadcrumbs} className="mb-6 text-gray-400 [&_a]:text-gray-400 [&_a:hover]:text-gold-400" />
           <SectionLabel centered={false}>Legal</SectionLabel>
           <h1 className="text-3xl md:text-5xl font-serif font-bold mt-2 mb-3">Privacy Policy</h1>
-          <p className="text-gray-400 text-sm">Last updated: January 2025 · Diamond Key Spa, Dubai, UAE</p>
+          <p className="text-gray-400 text-sm">Last updated: January 2025 · Diamond Key, Seeb, Muscat, Oman</p>
         </div>
       </div>
 
@@ -149,9 +149,9 @@ export default function PrivacyPolicyPage() {
           <AnimatedSection>
             <div className="luxury-card p-6 mb-10 border-l-4 border-gold-400">
               <p className="text-gray-600 leading-relaxed">
-                Diamond Key Spa (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy.
+                Diamond Key (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy.
                 This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information
-                when you visit our spa, use our website, or contact us. Please read this policy carefully.
+                when you visit our shop, use our website, or contact us. Please read this policy carefully.
                 By using our services, you agree to the practices described in this policy.
               </p>
             </div>
@@ -186,7 +186,7 @@ export default function PrivacyPolicyPage() {
             </div>
 
             <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-xs text-gray-400">This policy is governed by the laws of the United Arab Emirates.</p>
+              <p className="text-xs text-gray-400">This policy is governed by the laws of the Sultanate of Oman.</p>
               <div className="flex gap-3">
                 <Link href="/terms" className="text-sm text-gold-500 hover:text-gold-600 font-medium">Terms of Service</Link>
                 <Link href="/contact" className="text-sm text-gold-500 hover:text-gold-600 font-medium">Contact Us</Link>

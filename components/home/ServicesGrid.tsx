@@ -11,20 +11,20 @@ export default function ServicesGrid() {
   return (
     <section
       className="section-padding bg-white"
-      aria-label="Diamond Key Spa services"
+      aria-label="Diamond Key locksmith services Seeb Oman"
       id="services"
     >
       <div className="container-custom">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <SectionLabel>Our Services</SectionLabel>
           <h2 className="section-heading">
-            Luxury Spa Treatments
-            <span className="block text-gold-500">Crafted for You</span>
+            Professional Key & Locksmith
+            <span className="block text-gold-500">Services in Seeb</span>
           </h2>
           <p className="section-subheading mt-4">
-            From authentic Moroccan hammam rituals to advanced therapeutic massage and premium
-            skincare — every treatment at Diamond Key Spa is designed to rejuvenate your body,
-            calm your mind, and restore your spirit.
+            From precision car key duplication and transponder programming to emergency lockouts —
+            Diamond Key has the equipment, expertise, and experience to handle any key or lock
+            challenge in Seeb, Muscat.
           </p>
         </AnimatedSection>
 

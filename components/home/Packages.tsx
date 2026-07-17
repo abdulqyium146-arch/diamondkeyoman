@@ -1,119 +1,121 @@
 import Link from "next/link";
-import { Check, ArrowRight, Crown, Heart, Star } from "lucide-react";
+import { ArrowRight, Key, Cpu, RefreshCw, AlertTriangle } from "lucide-react";
 import AnimatedSection, { AnimatedGroup, AnimatedItem } from "@/components/shared/AnimatedSection";
 import { SectionLabel } from "@/components/shared/GoldDivider";
-import { packages } from "@/config/services";
 import { cn } from "@/lib/utils";
 
-const packageIcons = [Crown, Heart, Star];
+const pricingCards = [
+  {
+    icon: Key,
+    category: "Key Duplication",
+    tagline: "Fastest service",
+    priceDisplay: "OMR 0.5 – 5",
+    description: "Precision-cut duplicates for car keys, home keys, office keys, padlocks, and more. Ready in minutes.",
+    items: ["Car key copying", "Building/home key copying", "Padlock & cabinet keys", "High-security keys"],
+    href: "/services/car-key-copying",
+    tag: "Most Popular",
+    highlight: true,
+  },
+  {
+    icon: Cpu,
+    category: "Key Programming",
+    tagline: "OEM-grade equipment",
+    priceDisplay: "OMR 15 – 60",
+    description: "Digital transponder key programming and remote key fob creation for all major vehicle brands.",
+    items: ["Car key programming", "New key fob creation", "Remote central locking", "Immobiliser pairing"],
+    href: "/services/car-key-programming",
+    tag: null,
+    highlight: false,
+  },
+  {
+    icon: RefreshCw,
+    category: "Lock Rekeying",
+    tagline: "Security upgrade",
+    priceDisplay: "OMR 10 – 25",
+    description: "Rekey your home or office locks so old keys are instantly deactivated — without replacing the lock.",
+    items: ["Residential lock rekeying", "Commercial lock rekeying", "All lock brands", "New keys provided"],
+    href: "/services/lock-rekeying",
+    tag: null,
+    highlight: false,
+  },
+  {
+    icon: AlertTriangle,
+    category: "Emergency Lockout",
+    tagline: "Fast response",
+    priceDisplay: "OMR 10 – 30",
+    description: "Locked out of your car or home? We open locks without damage using professional entry tools.",
+    items: ["Car lockout service", "Building lockout service", "Non-destructive entry", "All car brands & locks"],
+    href: "/services/car-lockout",
+    tag: null,
+    highlight: false,
+  },
+];
 
 export default function Packages() {
   return (
-    <section className="section-padding bg-gray-50" aria-label="Spa packages at Diamond Key Spa">
+    <section className="section-padding bg-gray-50" aria-label="Diamond Key service pricing Seeb Oman">
       <div className="container-custom">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <SectionLabel>Spa Packages</SectionLabel>
+          <SectionLabel>Pricing Overview</SectionLabel>
           <h2 className="section-heading">
-            Complete Spa Journeys
-            <span className="block text-gold-500">For Every Occasion</span>
+            Transparent Pricing
+            <span className="block text-gold-500">No Hidden Fees</span>
           </h2>
           <p className="section-subheading mt-4">
-            Curated spa packages that combine our finest treatments into one seamless, deeply
-            restorative experience. Perfect for special occasions, gifting, or simply treating
-            yourself to the ultimate luxury.
+            We quote upfront before starting any work. All prices are in Omani Rials (OMR).
+            Final cost depends on key type and vehicle model — call us for an exact quote.
           </p>
         </AnimatedSection>
 
         <AnimatedGroup
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           staggerDelay={0.1}
         >
-          {packages.map((pkg, idx) => {
-            const Icon = packageIcons[idx];
-            const isPopular = pkg.popular;
+          {pricingCards.map((card) => {
+            const Icon = card.icon;
             return (
-              <AnimatedItem key={pkg.id} direction="up">
+              <AnimatedItem key={card.category} direction="up">
                 <div
                   className={cn(
                     "relative rounded-2xl overflow-hidden transition-all duration-500 h-full flex flex-col",
-                    isPopular
-                      ? "bg-luxury-dark text-white shadow-gold-lg scale-[1.02] border border-gold-500/30"
+                    card.highlight
+                      ? "bg-luxury-dark text-white shadow-gold-lg border border-gold-500/30"
                       : "bg-white shadow-luxury border border-gray-100 hover:shadow-luxury-lg hover:-translate-y-1"
                   )}
                 >
-                  {pkg.tag && (
-                    <div className="absolute top-5 right-5 bg-gold-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                      {pkg.tag}
+                  {card.tag && (
+                    <div className="absolute top-4 right-4 bg-gold-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+                      {card.tag}
                     </div>
                   )}
 
-                  <div
-                    className={cn(
-                      "p-6 pb-4",
-                      isPopular ? "bg-gradient-to-br from-gold-500/10 to-transparent" : ""
-                    )}
-                  >
-                    <div
-                      className={cn(
-                        "w-12 h-12 rounded-xl flex items-center justify-center mb-4",
-                        isPopular ? "bg-gold-500/20" : "bg-gold-50"
-                      )}
-                    >
-                      <Icon className={cn("w-6 h-6", isPopular ? "text-gold-300" : "text-gold-500")} />
+                  <div className={cn("p-6 pb-4", card.highlight ? "bg-gradient-to-br from-gold-500/10 to-transparent" : "")}>
+                    <div className={cn("w-12 h-12 rounded-xl flex items-center justify-center mb-4", card.highlight ? "bg-gold-500/20" : "bg-gold-50")}>
+                      <Icon className={cn("w-6 h-6", card.highlight ? "text-gold-300" : "text-gold-500")} />
                     </div>
-                    <h3
-                      className={cn(
-                        "text-xl font-serif font-bold mb-2",
-                        isPopular ? "text-white" : "text-gray-900"
-                      )}
-                    >
-                      {pkg.name}
+                    <h3 className={cn("text-xl font-serif font-bold mb-1", card.highlight ? "text-white" : "text-gray-900")}>
+                      {card.category}
                     </h3>
-                    <p
-                      className={cn(
-                        "text-sm leading-relaxed mb-4",
-                        isPopular ? "text-gray-400" : "text-gray-500"
-                      )}
-                    >
-                      {pkg.description}
+                    <p className={cn("text-xs uppercase tracking-widest mb-3", card.highlight ? "text-gold-400" : "text-gold-500")}>
+                      {card.tagline}
                     </p>
-
-                    <div className="flex items-baseline gap-2 mb-1">
-                      <span
-                        className={cn(
-                          "text-3xl font-serif font-bold",
-                          isPopular ? "text-gold-300" : "text-gold-500"
-                        )}
-                      >
-                        AED {pkg.price.toLocaleString()}
-                      </span>
+                    <p className={cn("text-sm leading-relaxed mb-4", card.highlight ? "text-gray-400" : "text-gray-500")}>
+                      {card.description}
+                    </p>
+                    <div className={cn("text-2xl font-serif font-bold mb-1", card.highlight ? "text-gold-300" : "text-gold-500")}>
+                      {card.priceDisplay}
                     </div>
-                    <p className={cn("text-xs", isPopular ? "text-gray-500" : "text-gray-400")}>
-                      {pkg.duration} · All inclusive
+                    <p className={cn("text-xs", card.highlight ? "text-gray-500" : "text-gray-400")}>
+                      Price range — quoted upfront
                     </p>
                   </div>
 
-                  <div className={cn("px-6 py-4 flex-1", isPopular ? "border-t border-white/10" : "border-t border-gray-100")}>
-                    <p className={cn("text-xs font-bold uppercase tracking-widest mb-3", isPopular ? "text-gold-400" : "text-gray-400")}>
-                      Includes
-                    </p>
+                  <div className={cn("px-6 py-4 flex-1", card.highlight ? "border-t border-white/10" : "border-t border-gray-100")}>
                     <ul className="space-y-2">
-                      {pkg.includes.map((item) => (
-                        <li key={item} className="flex items-start gap-2.5">
-                          <Check
-                            className={cn(
-                              "w-4 h-4 mt-0.5 flex-shrink-0",
-                              isPopular ? "text-gold-400" : "text-gold-500"
-                            )}
-                          />
-                          <span
-                            className={cn(
-                              "text-sm",
-                              isPopular ? "text-gray-300" : "text-gray-600"
-                            )}
-                          >
-                            {item}
-                          </span>
+                      {card.items.map((item) => (
+                        <li key={item} className="flex items-center gap-2.5">
+                          <div className={cn("w-1.5 h-1.5 rounded-full flex-shrink-0", card.highlight ? "bg-gold-400" : "bg-gold-400")} />
+                          <span className={cn("text-sm", card.highlight ? "text-gray-300" : "text-gray-600")}>{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -121,15 +123,15 @@ export default function Packages() {
 
                   <div className="p-6 pt-4">
                     <Link
-                      href={`/spa-packages/${pkg.slug}`}
+                      href={card.href}
                       className={cn(
                         "block text-center py-3 px-6 rounded-full font-semibold text-sm transition-all duration-300",
-                        isPopular
+                        card.highlight
                           ? "bg-gold-500 text-white hover:bg-gold-400 shadow-gold"
                           : "border-2 border-gold-500 text-gold-600 hover:bg-gold-500 hover:text-white"
                       )}
                     >
-                      Book This Package
+                      Learn More
                     </Link>
                   </div>
                 </div>
@@ -140,13 +142,13 @@ export default function Packages() {
 
         <AnimatedSection className="text-center mt-12">
           <p className="text-gray-500 text-sm mb-4">
-            Looking for something more specific? We create custom packages tailored to your needs.
+            Not sure what you need? Call us and describe the issue — we&apos;ll advise you for free.
           </p>
           <Link
-            href="/spa-packages"
+            href="/services"
             className="ghost-btn inline-flex items-center gap-2"
           >
-            View All Packages
+            View All Services
             <ArrowRight className="w-4 h-4" />
           </Link>
         </AnimatedSection>
