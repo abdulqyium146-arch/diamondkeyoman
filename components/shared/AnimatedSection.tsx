@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, ReactNode } from "react";
+import { useRef, ReactNode, ElementType } from "react";
 import { motion, useInView, Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -12,7 +12,7 @@ interface AnimatedSectionProps {
   duration?: number;
   once?: boolean;
   amount?: number;
-  as?: keyof JSX.IntrinsicElements;
+  as?: ElementType;
 }
 
 const variants: Record<string, Variants> = {
