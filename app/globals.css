@@ -179,7 +179,7 @@
 
   .service-card {
     @apply relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100
-           hover:shadow-luxury hover:-translate-y-2 transition-all duration-500 group;
+           hover:shadow-luxury hover:-translate-y-2 transition-all duration-500;
   }
 
   .review-card {
